@@ -1,0 +1,800 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="Electron" pages="4" compressed="false">
+  <diagram id="uc1" name="UC-1 — Построение маршрута">
+    <mxGraphModel dx="1600" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1760" pageHeight="1740" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="uc1_c1" value="Организатор поездки" style="swimlane;html=1;startSize=42;fillColor=none;strokeColor=#000000;fontSize=13;fontStyle=1;collapsible=0;whiteSpace=wrap;horizontal=1;swimlaneFillColor=none;fontFamily=Helvetica;container=1;recursiveResize=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="400" height="1630.0" as="geometry" />
+        </mxCell>
+        <mxCell id="uc1_c2" value="Мобильное приложение" style="swimlane;html=1;startSize=42;fillColor=none;strokeColor=#000000;fontSize=13;fontStyle=1;collapsible=0;whiteSpace=wrap;horizontal=1;swimlaneFillColor=none;fontFamily=Helvetica;container=1;recursiveResize=0;" vertex="1" parent="1">
+          <mxGeometry x="440" y="40" width="400" height="1630.0" as="geometry" />
+        </mxCell>
+        <mxCell id="uc1_c3" value="Серверная часть" style="swimlane;html=1;startSize=42;fillColor=none;strokeColor=#000000;fontSize=13;fontStyle=1;collapsible=0;whiteSpace=wrap;horizontal=1;swimlaneFillColor=none;fontFamily=Helvetica;container=1;recursiveResize=0;" vertex="1" parent="1">
+          <mxGeometry x="840" y="40" width="400" height="1630.0" as="geometry" />
+        </mxCell>
+        <mxCell id="uc1_c4" value="Внешние геосервисы (Яндекс)" style="swimlane;html=1;startSize=42;fillColor=none;strokeColor=#000000;fontSize=13;fontStyle=1;collapsible=0;whiteSpace=wrap;horizontal=1;swimlaneFillColor=none;fontFamily=Helvetica;container=1;recursiveResize=0;" vertex="1" parent="1">
+          <mxGeometry x="1240" y="40" width="400" height="1630.0" as="geometry" />
+        </mxCell>
+        <mxCell id="uc1_c5" value="" style="ellipse;html=1;fillColor=#000000;strokeColor=#000000;fontSize=11;spacing=5;" vertex="1" parent="uc1_c1">
+          <mxGeometry x="185.0" y="60.0" width="30.0" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uc1_c6" value="Указать точку отправления и точку назначения на карте или поиском адреса" style="rounded=1;arcSize=40;whiteSpace=wrap;html=1;fillColor=#FFFFF0;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;spacing=5;" vertex="1" parent="uc1_c1">
+          <mxGeometry x="40.0" y="120.0" width="320.0" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uc1_c7" value="Добавить промежуточные точки маршрута" style="rounded=1;arcSize=40;whiteSpace=wrap;html=1;fillColor=#FFFFF0;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;spacing=5;" vertex="1" parent="uc1_c1">
+          <mxGeometry x="40.0" y="210.0" width="320.0" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="uc1_c8" value="Проверить формат координат и отправить набор точек на сервер" style="rounded=1;arcSize=40;whiteSpace=wrap;html=1;fillColor=#FFFFF0;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;spacing=5;" vertex="1" parent="uc1_c2">
+          <mxGeometry x="40.0" y="290.0" width="320.0" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uc1_c9" value="Нормализовать набор точек, геокодировать текстовые запросы" style="rounded=1;arcSize=40;whiteSpace=wrap;html=1;fillColor=#FFFFF0;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;spacing=5;" vertex="1" parent="uc1_c3">
+          <mxGeometry x="40.0" y="380.0" width="320.0" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uc1_c10" value="Все точки достижимы по дорожной сети?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontSize=10;fontFamily=Helvetica;spacing=5;" vertex="1" parent="uc1_c3">
+          <mxGeometry x="70.0" y="470.0" width="260.0" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="uc1_c11" value="Геометрия есть в кэше?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontSize=10;fontFamily=Helvetica;spacing=5;" vertex="1" parent="uc1_c3">
+          <mxGeometry x="70.0" y="590.0" width="260.0" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="uc1_c12" value="Проверить суточный лимит и запросить геометрию маршрута" style="rounded=1;arcSize=40;whiteSpace=wrap;html=1;fillColor=#FFFFF0;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;spacing=5;" vertex="1" parent="uc1_c3">
+          <mxGeometry x="40.0" y="720.0" width="320.0" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uc1_c13" value="Построить маршрут и вернуть геометрию, расстояние и время" style="rounded=1;arcSize=40;whiteSpace=wrap;html=1;fillColor=#FFFFF0;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;spacing=5;" vertex="1" parent="uc1_c4">
+          <mxGeometry x="50.0" y="720.0" width="300.0" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="uc1_c14" value="Ответ получен без ошибки?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontSize=10;fontFamily=Helvetica;spacing=5;" vertex="1" parent="uc1_c3">
+          <mxGeometry x="70.0" y="830.0" width="260.0" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="uc1_c15" value="Сохранить версию маршрута и записать геометрию в кэш" style="rounded=1;arcSize=40;whiteSpace=wrap;html=1;fillColor=#FFFFF0;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;spacing=5;" vertex="1" parent="uc1_c3">
+          <mxGeometry x="40.0" y="960.0" width="320.0" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uc1_c16" value="Отобразить маршрут, расстояние и время в пути" style="rounded=1;arcSize=40;whiteSpace=wrap;html=1;fillColor=#FFFFF0;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;spacing=5;" vertex="1" parent="uc1_c2">
+          <mxGeometry x="40.0" y="1050.0" width="320.0" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="uc1_c17" value="Задать радиус подбора и категории точек интереса" style="rounded=1;arcSize=40;whiteSpace=wrap;html=1;fillColor=#FFFFF0;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;spacing=5;" vertex="1" parent="uc1_c1">
+          <mxGeometry x="40.0" y="1130.0" width="320.0" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="uc1_c18" value="Построить коридор вдоль линии маршрута и запросить объекты" style="rounded=1;arcSize=40;whiteSpace=wrap;html=1;fillColor=#FFFFF0;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;spacing=5;" vertex="1" parent="uc1_c3">
+          <mxGeometry x="40.0" y="1210.0" width="320.0" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uc1_c19" value="Вернуть объекты выбранных категорий" style="rounded=1;arcSize=40;whiteSpace=wrap;html=1;fillColor=#FFFFF0;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;spacing=5;" vertex="1" parent="uc1_c4">
+          <mxGeometry x="50.0" y="1210.0" width="300.0" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="uc1_c20" value="Отфильтровать по удалению от линии, сохранить в кэш на 24 ч" style="rounded=1;arcSize=40;whiteSpace=wrap;html=1;fillColor=#FFFFF0;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;spacing=5;" vertex="1" parent="uc1_c3">
+          <mxGeometry x="40.0" y="1310.0" width="320.0" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uc1_c21" value="Отобразить маркеры точек интереса с категорией и удалением" style="rounded=1;arcSize=40;whiteSpace=wrap;html=1;fillColor=#FFFFF0;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;spacing=5;" vertex="1" parent="uc1_c2">
+          <mxGeometry x="40.0" y="1400.0" width="320.0" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uc1_c22" value="Сохранить поездку и её настройки" style="rounded=1;arcSize=40;whiteSpace=wrap;html=1;fillColor=#FFFFF0;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;spacing=5;" vertex="1" parent="uc1_c1">
+          <mxGeometry x="40.0" y="1490.0" width="320.0" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="uc1_c23" value="" style="ellipse;shape=endState;html=1;fillColor=#000000;strokeColor=#000000;fontSize=11;spacing=5;" vertex="1" parent="uc1_c1">
+          <mxGeometry x="185.0" y="1570.0" width="30.0" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uc1_c24" value="Сообщить, что точка недостижима, и предложить её скорректировать" style="rounded=1;arcSize=40;whiteSpace=wrap;html=1;fillColor=#FFFFF0;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;spacing=5;" vertex="1" parent="uc1_c2">
+          <mxGeometry x="40.0" y="520.0" width="320.0" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uc1_c25" value="" style="ellipse;shape=endState;html=1;fillColor=#000000;strokeColor=#000000;fontSize=11;spacing=5;" vertex="1" parent="uc1_c2">
+          <mxGeometry x="185.0" y="610.0" width="30.0" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uc1_c26" value="Сообщить о временной невозможности построить маршрут" style="rounded=1;arcSize=40;whiteSpace=wrap;html=1;fillColor=#FFFFF0;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;spacing=5;" vertex="1" parent="uc1_c2">
+          <mxGeometry x="40.0" y="860.0" width="320.0" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uc1_c27" value="" style="ellipse;shape=endState;html=1;fillColor=#000000;strokeColor=#000000;fontSize=11;spacing=5;" vertex="1" parent="uc1_c2">
+          <mxGeometry x="185.0" y="950.0" width="30.0" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uc1_e28" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=1;endSize=8;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=none;jettySize=0;strokeWidth=1.2;labelBorderColor=none;fillColor=none;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="uc1_c5" target="uc1_c6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uc1_e29" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=1;endSize=8;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=none;jettySize=0;strokeWidth=1.2;labelBorderColor=none;fillColor=none;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="uc1_c6" target="uc1_c7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uc1_e30" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=1;endSize=8;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=none;jettySize=0;strokeWidth=1.2;labelBorderColor=none;fillColor=none;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="uc1_c7" target="uc1_c8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="240.0" y="314.0" />
+              <mxPoint x="640.0" y="314.0" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uc1_e31" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=1;endSize=8;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=none;jettySize=0;strokeWidth=1.2;labelBorderColor=none;fillColor=none;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="uc1_c8" target="uc1_c9">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="640.0" y="404.0" />
+              <mxPoint x="1040.0" y="404.0" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uc1_e32" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=1;endSize=8;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=none;jettySize=0;strokeWidth=1.2;labelBorderColor=none;fillColor=none;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="uc1_c9" target="uc1_c10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uc1_e33" value="да" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=1;endSize=8;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=none;jettySize=0;strokeWidth=1.2;labelBorderColor=none;fillColor=none;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="uc1_c10" target="uc1_c11">
+          <mxGeometry relative="1" as="geometry" x="0.0" y="0">
+            <mxPoint x="-17.0" y="0" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uc1_e34" value="нет" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=1;endSize=8;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=none;jettySize=0;strokeWidth=1.2;labelBorderColor=none;fillColor=none;exitX=0;exitY=0.5;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="uc1_c10" target="uc1_c24">
+          <mxGeometry relative="1" as="geometry" x="-0.305050505050505" y="0">
+            <Array as="points">
+              <mxPoint x="894.0" y="555.0" />
+              <mxPoint x="894.0" y="544.0" />
+              <mxPoint x="640.0" y="544.0" />
+            </Array>
+            <mxPoint x="0" y="-18.0" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uc1_e35" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=1;endSize=8;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=none;jettySize=0;strokeWidth=1.2;labelBorderColor=none;fillColor=none;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="uc1_c24" target="uc1_c25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uc1_e36" value="нет" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=1;endSize=8;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=none;jettySize=0;strokeWidth=1.2;labelBorderColor=none;fillColor=none;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="uc1_c11" target="uc1_c12">
+          <mxGeometry relative="1" as="geometry" x="-0.19999999999999996" y="0">
+            <mxPoint x="-20.0" y="0" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uc1_e37" value="да" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=1;endSize=8;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=none;jettySize=0;strokeWidth=1.2;labelBorderColor=none;fillColor=none;exitX=1;exitY=0.5;entryX=1;entryY=0.5;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="uc1_c11" target="uc1_c15">
+          <mxGeometry relative="1" as="geometry" x="-0.9338129496402878" y="0">
+            <Array as="points">
+              <mxPoint x="1216.0" y="675.0" />
+              <mxPoint x="1216.0" y="1030.0" />
+            </Array>
+            <mxPoint x="0" y="-18.0" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uc1_e38" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=1;endSize=8;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=none;jettySize=0;strokeWidth=1.2;labelBorderColor=none;fillColor=none;exitX=1;exitY=0.5;entryX=0;entryY=0.5;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="uc1_c12" target="uc1_c13">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1274.0" y="790.0" />
+              <mxPoint x="1274.0" y="795.0" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uc1_e39" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=1;endSize=8;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=none;jettySize=0;strokeWidth=1.2;labelBorderColor=none;fillColor=none;exitX=0.5;exitY=1;entryX=1;entryY=0.5;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="uc1_c13" target="uc1_c14">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1440.0" y="915.0" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uc1_e40" value="нет" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=1;endSize=8;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=none;jettySize=0;strokeWidth=1.2;labelBorderColor=none;fillColor=none;exitX=0;exitY=0.5;entryX=1;entryY=0.5;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="uc1_c14" target="uc1_c26">
+          <mxGeometry relative="1" as="geometry" x="-0.6719999999999999" y="0">
+            <Array as="points">
+              <mxPoint x="894.0" y="915.0" />
+              <mxPoint x="894.0" y="930.0" />
+            </Array>
+            <mxPoint x="-20.0" y="0" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uc1_e41" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=1;endSize=8;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=none;jettySize=0;strokeWidth=1.2;labelBorderColor=none;fillColor=none;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="uc1_c26" target="uc1_c27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uc1_e42" value="да" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=1;endSize=8;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=none;jettySize=0;strokeWidth=1.2;labelBorderColor=none;fillColor=none;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="uc1_c14" target="uc1_c15">
+          <mxGeometry relative="1" as="geometry" x="-0.19999999999999996" y="0">
+            <mxPoint x="-17.0" y="0" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uc1_e43" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=1;endSize=8;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=none;jettySize=0;strokeWidth=1.2;labelBorderColor=none;fillColor=none;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="uc1_c15" target="uc1_c16">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1040.0" y="1074.0" />
+              <mxPoint x="640.0" y="1074.0" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uc1_e44" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=1;endSize=8;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=none;jettySize=0;strokeWidth=1.2;labelBorderColor=none;fillColor=none;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="uc1_c16" target="uc1_c17">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="640.0" y="1154.0" />
+              <mxPoint x="240.0" y="1154.0" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uc1_e45" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=1;endSize=8;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=none;jettySize=0;strokeWidth=1.2;labelBorderColor=none;fillColor=none;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="uc1_c17" target="uc1_c18">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="240.0" y="1234.0" />
+              <mxPoint x="1040.0" y="1234.0" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uc1_e46" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=1;endSize=8;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=none;jettySize=0;strokeWidth=1.2;labelBorderColor=none;fillColor=none;exitX=1;exitY=0.5;entryX=0;entryY=0.5;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="uc1_c18" target="uc1_c19">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1216.0" y="1280.0" />
+              <mxPoint x="1216.0" y="1275.0" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uc1_e47" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=1;endSize=8;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=none;jettySize=0;strokeWidth=1.2;labelBorderColor=none;fillColor=none;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="uc1_c19" target="uc1_c20">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1440.0" y="1334.0" />
+              <mxPoint x="1040.0" y="1334.0" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uc1_e48" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=1;endSize=8;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=none;jettySize=0;strokeWidth=1.2;labelBorderColor=none;fillColor=none;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="uc1_c20" target="uc1_c21">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1040.0" y="1424.0" />
+              <mxPoint x="640.0" y="1424.0" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uc1_e49" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=1;endSize=8;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=none;jettySize=0;strokeWidth=1.2;labelBorderColor=none;fillColor=none;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="uc1_c21" target="uc1_c22">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="640.0" y="1514.0" />
+              <mxPoint x="240.0" y="1514.0" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uc1_e50" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=1;endSize=8;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=none;jettySize=0;strokeWidth=1.2;labelBorderColor=none;fillColor=none;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="uc1_c22" target="uc1_c23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="uc2" name="UC-2 — Приглашение участника">
+    <mxGraphModel dx="1600" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1740" pageHeight="1620" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="uc2_c1" value="Организатор поездки" style="swimlane;html=1;startSize=42;fillColor=none;strokeColor=#000000;fontSize=13;fontStyle=1;collapsible=0;whiteSpace=wrap;horizontal=1;swimlaneFillColor=none;fontFamily=Helvetica;container=1;recursiveResize=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="400" height="1460.0" as="geometry" />
+        </mxCell>
+        <mxCell id="uc2_c2" value="Приглашённый пользователь" style="swimlane;html=1;startSize=42;fillColor=none;strokeColor=#000000;fontSize=13;fontStyle=1;collapsible=0;whiteSpace=wrap;horizontal=1;swimlaneFillColor=none;fontFamily=Helvetica;container=1;recursiveResize=0;" vertex="1" parent="1">
+          <mxGeometry x="440" y="40" width="400" height="1460.0" as="geometry" />
+        </mxCell>
+        <mxCell id="uc2_c3" value="Мобильное приложение" style="swimlane;html=1;startSize=42;fillColor=none;strokeColor=#000000;fontSize=13;fontStyle=1;collapsible=0;whiteSpace=wrap;horizontal=1;swimlaneFillColor=none;fontFamily=Helvetica;container=1;recursiveResize=0;" vertex="1" parent="1">
+          <mxGeometry x="840" y="40" width="400" height="1460.0" as="geometry" />
+        </mxCell>
+        <mxCell id="uc2_c4" value="Серверная часть" style="swimlane;html=1;startSize=42;fillColor=none;strokeColor=#000000;fontSize=13;fontStyle=1;collapsible=0;whiteSpace=wrap;horizontal=1;swimlaneFillColor=none;fontFamily=Helvetica;container=1;recursiveResize=0;" vertex="1" parent="1">
+          <mxGeometry x="1240" y="40" width="400" height="1460.0" as="geometry" />
+        </mxCell>
+        <mxCell id="uc2_c5" value="" style="ellipse;html=1;fillColor=#000000;strokeColor=#000000;fontSize=11;spacing=5;" vertex="1" parent="uc2_c1">
+          <mxGeometry x="185.0" y="60.0" width="30.0" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uc2_c6" value="Открыть поездку и выбрать функцию приглашения участников" style="rounded=1;arcSize=40;whiteSpace=wrap;html=1;fillColor=#FFFFF0;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;spacing=5;" vertex="1" parent="uc2_c1">
+          <mxGeometry x="40.0" y="120.0" width="320.0" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="uc2_c7" value="Задать срок действия ссылки и допустимое число переходов" style="rounded=1;arcSize=40;whiteSpace=wrap;html=1;fillColor=#FFFFF0;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;spacing=5;" vertex="1" parent="uc2_c1">
+          <mxGeometry x="40.0" y="210.0" width="320.0" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="uc2_c8" value="Отозвать прежнюю ссылку, сгенерировать токен и сохранить его хеш" style="rounded=1;arcSize=40;whiteSpace=wrap;html=1;fillColor=#FFFFF0;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;spacing=5;" vertex="1" parent="uc2_c4">
+          <mxGeometry x="40.0" y="290.0" width="320.0" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="uc2_c9" value="Показать ссылку-приглашение для передачи внешним каналом" style="rounded=1;arcSize=40;whiteSpace=wrap;html=1;fillColor=#FFFFF0;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;spacing=5;" vertex="1" parent="uc2_c3">
+          <mxGeometry x="40.0" y="390.0" width="320.0" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uc2_c10" value="Перейти по полученной ссылке-приглашению" style="rounded=1;arcSize=40;whiteSpace=wrap;html=1;fillColor=#FFFFF0;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;spacing=5;" vertex="1" parent="uc2_c2">
+          <mxGeometry x="40.0" y="480.0" width="320.0" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="uc2_c11" value="Пользователь авторизован?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontSize=10;fontFamily=Helvetica;spacing=5;" vertex="1" parent="uc2_c2">
+          <mxGeometry x="70.0" y="560.0" width="260.0" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="uc2_c12" value="Войти в аккаунт по одноразовому коду с адреса почты" style="rounded=1;arcSize=40;whiteSpace=wrap;html=1;fillColor=#FFFFF0;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;spacing=5;" vertex="1" parent="uc2_c2">
+          <mxGeometry x="40.0" y="680.0" width="320.0" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uc2_c13" value="Проверить срок действия, число переходов и признак отзыва ссылки" style="rounded=1;arcSize=40;whiteSpace=wrap;html=1;fillColor=#FFFFF0;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;spacing=5;" vertex="1" parent="uc2_c4">
+          <mxGeometry x="40.0" y="770.0" width="320.0" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="uc2_c14" value="Приглашение действительно?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontSize=10;fontFamily=Helvetica;spacing=5;" vertex="1" parent="uc2_c4">
+          <mxGeometry x="70.0" y="860.0" width="260.0" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="uc2_c15" value="Сообщить, что приглашение недействительно" style="rounded=1;arcSize=40;whiteSpace=wrap;html=1;fillColor=#FFFFF0;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;spacing=5;" vertex="1" parent="uc2_c3">
+          <mxGeometry x="40.0" y="860.0" width="320.0" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uc2_c16" value="" style="ellipse;shape=endState;html=1;fillColor=#000000;strokeColor=#000000;fontSize=11;spacing=5;" vertex="1" parent="uc2_c3">
+          <mxGeometry x="185.0" y="940.0" width="30.0" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uc2_c17" value="Лимит участников не достигнут?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontSize=10;fontFamily=Helvetica;spacing=5;" vertex="1" parent="uc2_c4">
+          <mxGeometry x="70.0" y="980.0" width="260.0" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="uc2_c18" value="Сообщить, что достигнут лимит участников поездки" style="rounded=1;arcSize=40;whiteSpace=wrap;html=1;fillColor=#FFFFF0;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;spacing=5;" vertex="1" parent="uc2_c3">
+          <mxGeometry x="40.0" y="990.0" width="320.0" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uc2_c19" value="" style="ellipse;shape=endState;html=1;fillColor=#000000;strokeColor=#000000;fontSize=11;spacing=5;" vertex="1" parent="uc2_c3">
+          <mxGeometry x="185.0" y="1070.0" width="30.0" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uc2_c20" value="Добавить участника с ролью наблюдателя и записать переход" style="rounded=1;arcSize=40;whiteSpace=wrap;html=1;fillColor=#FFFFF0;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;spacing=5;" vertex="1" parent="uc2_c4">
+          <mxGeometry x="40.0" y="1100.0" width="320.0" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uc2_c21" value="Направить организатору уведомление о присоединении (≤ 5 с)" style="rounded=1;arcSize=40;whiteSpace=wrap;html=1;fillColor=#FFFFF0;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;spacing=5;" vertex="1" parent="uc2_c4">
+          <mxGeometry x="40.0" y="1190.0" width="320.0" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uc2_c22" value="Изменить роль участника на «редактор» (при необходимости)" style="rounded=1;arcSize=40;whiteSpace=wrap;html=1;fillColor=#FFFFF0;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;spacing=5;" vertex="1" parent="uc2_c1">
+          <mxGeometry x="40.0" y="1290.0" width="320.0" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uc2_c23" value="Изменить роль и разослать событие участникам сессии" style="rounded=1;arcSize=40;whiteSpace=wrap;html=1;fillColor=#FFFFF0;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;spacing=5;" vertex="1" parent="uc2_c4">
+          <mxGeometry x="40.0" y="1290.0" width="320.0" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uc2_c24" value="" style="ellipse;shape=endState;html=1;fillColor=#000000;strokeColor=#000000;fontSize=11;spacing=5;" vertex="1" parent="uc2_c1">
+          <mxGeometry x="185.0" y="1400.0" width="30.0" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uc2_e25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=1;endSize=8;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=none;jettySize=0;strokeWidth=1.2;labelBorderColor=none;fillColor=none;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="uc2_c5" target="uc2_c6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uc2_e26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=1;endSize=8;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=none;jettySize=0;strokeWidth=1.2;labelBorderColor=none;fillColor=none;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="uc2_c6" target="uc2_c7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uc2_e27" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=1;endSize=8;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=none;jettySize=0;strokeWidth=1.2;labelBorderColor=none;fillColor=none;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="uc2_c7" target="uc2_c8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="240.0" y="314.0" />
+              <mxPoint x="1440.0" y="314.0" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uc2_e28" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=1;endSize=8;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=none;jettySize=0;strokeWidth=1.2;labelBorderColor=none;fillColor=none;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="uc2_c8" target="uc2_c9">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1440.0" y="414.0" />
+              <mxPoint x="1040.0" y="414.0" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uc2_e29" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=1;endSize=8;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=none;jettySize=0;strokeWidth=1.2;labelBorderColor=none;fillColor=none;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="uc2_c9" target="uc2_c10">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1040.0" y="504.0" />
+              <mxPoint x="640.0" y="504.0" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uc2_e30" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=1;endSize=8;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=none;jettySize=0;strokeWidth=1.2;labelBorderColor=none;fillColor=none;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="uc2_c10" target="uc2_c11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uc2_e31" value="нет" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=1;endSize=8;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=none;jettySize=0;strokeWidth=1.2;labelBorderColor=none;fillColor=none;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="uc2_c11" target="uc2_c12">
+          <mxGeometry relative="1" as="geometry" x="0.0" y="0">
+            <mxPoint x="-20.0" y="0" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uc2_e32" value="да" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=1;endSize=8;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=none;jettySize=0;strokeWidth=1.2;labelBorderColor=none;fillColor=none;exitX=1;exitY=0.5;entryX=0;entryY=0.5;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="uc2_c11" target="uc2_c13">
+          <mxGeometry relative="1" as="geometry" x="-0.5825352112676057" y="0">
+            <Array as="points">
+              <mxPoint x="1264.0" y="645.0" />
+              <mxPoint x="1264.0" y="845.0" />
+            </Array>
+            <mxPoint x="0" y="-18.0" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uc2_e33" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=1;endSize=8;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=none;jettySize=0;strokeWidth=1.2;labelBorderColor=none;fillColor=none;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="uc2_c12" target="uc2_c13">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="640.0" y="794.0" />
+              <mxPoint x="1440.0" y="794.0" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uc2_e34" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=1;endSize=8;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=none;jettySize=0;strokeWidth=1.2;labelBorderColor=none;fillColor=none;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="uc2_c13" target="uc2_c14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uc2_e35" value="нет" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=1;endSize=8;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=none;jettySize=0;strokeWidth=1.2;labelBorderColor=none;fillColor=none;exitX=0;exitY=0.5;entryX=1;entryY=0.5;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="uc2_c14" target="uc2_c15">
+          <mxGeometry relative="1" as="geometry" x="-0.6719999999999999" y="0">
+            <Array as="points">
+              <mxPoint x="1294.0" y="945.0" />
+              <mxPoint x="1294.0" y="930.0" />
+            </Array>
+            <mxPoint x="-20.0" y="0" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uc2_e36" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=1;endSize=8;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=none;jettySize=0;strokeWidth=1.2;labelBorderColor=none;fillColor=none;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="uc2_c15" target="uc2_c16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uc2_e37" value="да" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=1;endSize=8;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=none;jettySize=0;strokeWidth=1.2;labelBorderColor=none;fillColor=none;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="uc2_c14" target="uc2_c17">
+          <mxGeometry relative="1" as="geometry" x="0.0" y="0">
+            <mxPoint x="-17.0" y="0" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uc2_e38" value="нет" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=1;endSize=8;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=none;jettySize=0;strokeWidth=1.2;labelBorderColor=none;fillColor=none;exitX=0;exitY=0.5;entryX=1;entryY=0.5;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="uc2_c17" target="uc2_c18">
+          <mxGeometry relative="1" as="geometry" x="-0.1443478260869565" y="0">
+            <Array as="points">
+              <mxPoint x="1294.0" y="1065.0" />
+              <mxPoint x="1294.0" y="1060.0" />
+            </Array>
+            <mxPoint x="0" y="-18.0" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uc2_e39" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=1;endSize=8;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=none;jettySize=0;strokeWidth=1.2;labelBorderColor=none;fillColor=none;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="uc2_c18" target="uc2_c19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uc2_e40" value="да" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=1;endSize=8;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=none;jettySize=0;strokeWidth=1.2;labelBorderColor=none;fillColor=none;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="uc2_c17" target="uc2_c20">
+          <mxGeometry relative="1" as="geometry" x="0.0" y="0">
+            <mxPoint x="-17.0" y="0" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uc2_e41" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=1;endSize=8;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=none;jettySize=0;strokeWidth=1.2;labelBorderColor=none;fillColor=none;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="uc2_c20" target="uc2_c21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uc2_e42" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=1;endSize=8;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=none;jettySize=0;strokeWidth=1.2;labelBorderColor=none;fillColor=none;exitX=0;exitY=0.5;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="uc2_c21" target="uc2_c22">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1264.0" y="1260.0" />
+              <mxPoint x="1264.0" y="1314.0" />
+              <mxPoint x="240.0" y="1314.0" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uc2_e43" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=1;endSize=8;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=none;jettySize=0;strokeWidth=1.2;labelBorderColor=none;fillColor=none;exitX=1;exitY=0.5;entryX=0;entryY=0.5;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="uc2_c22" target="uc2_c23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uc2_e44" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=1;endSize=8;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=none;jettySize=0;strokeWidth=1.2;labelBorderColor=none;fillColor=none;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="uc2_c23" target="uc2_c24">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1440.0" y="1424.0" />
+              <mxPoint x="240.0" y="1424.0" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="uc3" name="UC-3 — Совместное редактирование">
+    <mxGraphModel dx="1600" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1760" pageHeight="1520" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="uc3_c1" value="Участник с ролью «редактор»" style="swimlane;html=1;startSize=42;fillColor=none;strokeColor=#000000;fontSize=13;fontStyle=1;collapsible=0;whiteSpace=wrap;horizontal=1;swimlaneFillColor=none;fontFamily=Helvetica;container=1;recursiveResize=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="400" height="1400.0" as="geometry" />
+        </mxCell>
+        <mxCell id="uc3_c2" value="Клиентское приложение участника" style="swimlane;html=1;startSize=42;fillColor=none;strokeColor=#000000;fontSize=13;fontStyle=1;collapsible=0;whiteSpace=wrap;horizontal=1;swimlaneFillColor=none;fontFamily=Helvetica;container=1;recursiveResize=0;" vertex="1" parent="1">
+          <mxGeometry x="440" y="40" width="400" height="1400.0" as="geometry" />
+        </mxCell>
+        <mxCell id="uc3_c3" value="Шлюз сессий и серверная часть" style="swimlane;html=1;startSize=42;fillColor=none;strokeColor=#000000;fontSize=13;fontStyle=1;collapsible=0;whiteSpace=wrap;horizontal=1;swimlaneFillColor=none;fontFamily=Helvetica;container=1;recursiveResize=0;" vertex="1" parent="1">
+          <mxGeometry x="840" y="40" width="400" height="1400.0" as="geometry" />
+        </mxCell>
+        <mxCell id="uc3_c4" value="Клиенты остальных участников" style="swimlane;html=1;startSize=42;fillColor=none;strokeColor=#000000;fontSize=13;fontStyle=1;collapsible=0;whiteSpace=wrap;horizontal=1;swimlaneFillColor=none;fontFamily=Helvetica;container=1;recursiveResize=0;" vertex="1" parent="1">
+          <mxGeometry x="1240" y="40" width="400" height="1400.0" as="geometry" />
+        </mxCell>
+        <mxCell id="uc3_c5" value="" style="ellipse;html=1;fillColor=#000000;strokeColor=#000000;fontSize=11;spacing=5;" vertex="1" parent="uc3_c1">
+          <mxGeometry x="185.0" y="60.0" width="30.0" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uc3_c6" value="Открыть экран поездки" style="rounded=1;arcSize=40;whiteSpace=wrap;html=1;fillColor=#FFFFF0;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;spacing=5;" vertex="1" parent="uc3_c1">
+          <mxGeometry x="50.0" y="120.0" width="300.0" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="uc3_c7" value="Подключиться к сессии поездки (join)" style="rounded=1;arcSize=40;whiteSpace=wrap;html=1;fillColor=#FFFFF0;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;spacing=5;" vertex="1" parent="uc3_c2">
+          <mxGeometry x="40.0" y="200.0" width="320" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="uc3_c8" value="Проверить маркер доступа и роль участника" style="rounded=1;arcSize=40;whiteSpace=wrap;html=1;fillColor=#FFFFF0;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;spacing=5;" vertex="1" parent="uc3_c3">
+          <mxGeometry x="40.0" y="280.0" width="320" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="uc3_c9" value="Вернуть снимок маршрута и список присутствующих" style="rounded=1;arcSize=40;whiteSpace=wrap;html=1;fillColor=#FFFFF0;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;spacing=5;" vertex="1" parent="uc3_c3">
+          <mxGeometry x="40.0" y="370.0" width="320" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="uc3_c10" value="Переместить, добавить или удалить точку маршрута" style="rounded=1;arcSize=40;whiteSpace=wrap;html=1;fillColor=#FFFFF0;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;spacing=5;" vertex="1" parent="uc3_c1">
+          <mxGeometry x="50.0" y="460.0" width="300.0" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uc3_c11" value="Отправить событие изменения по постоянному соединению" style="rounded=1;arcSize=40;whiteSpace=wrap;html=1;fillColor=#FFFFF0;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;spacing=5;" vertex="1" parent="uc3_c2">
+          <mxGeometry x="40.0" y="550.0" width="320" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="uc3_c12" value="Соединение активно?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontSize=10;fontFamily=Helvetica;spacing=5;" vertex="1" parent="uc3_c2">
+          <mxGeometry x="70.0" y="630.0" width="260" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="uc3_c13" value="Переподключиться в течение 30 с и запросить снимок от известной версии" style="rounded=1;arcSize=40;whiteSpace=wrap;html=1;fillColor=#FFFFF0;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;spacing=5;" vertex="1" parent="uc3_c2">
+          <mxGeometry x="40.0" y="750.0" width="320" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="uc3_c14" value="Роль допускает изменение маршрута?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontSize=10;fontFamily=Helvetica;spacing=5;" vertex="1" parent="uc3_c3">
+          <mxGeometry x="70.0" y="630.0" width="260" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="uc3_c15" value="Применить изменение в транзакции и увеличить номер версии" style="rounded=1;arcSize=40;whiteSpace=wrap;html=1;fillColor=#FFFFF0;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;spacing=5;" vertex="1" parent="uc3_c3">
+          <mxGeometry x="40.0" y="880.0" width="320" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uc3_c16" value="Показать отказ: недостаточно прав" style="rounded=1;arcSize=40;whiteSpace=wrap;html=1;fillColor=#FFFFF0;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;spacing=5;" vertex="1" parent="uc3_c2">
+          <mxGeometry x="40.0" y="860.0" width="320" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="uc3_c17" value="" style="ellipse;shape=endState;html=1;fillColor=#000000;strokeColor=#000000;fontSize=11;spacing=5;" vertex="1" parent="uc3_c2">
+          <mxGeometry x="185.0" y="940.0" width="30.0" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uc3_c18" value="Номер версии совпадает с текущим?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontSize=10;fontFamily=Helvetica;spacing=5;" vertex="1" parent="uc3_c3">
+          <mxGeometry x="70.0" y="750.0" width="260" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="uc3_c19" value="Вернуть инициатору актуальный снимок маршрута" style="rounded=1;arcSize=40;whiteSpace=wrap;html=1;fillColor=#FFFFF0;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;spacing=5;" vertex="1" parent="uc3_c3">
+          <mxGeometry x="40.0" y="990.0" width="320" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="uc3_c20" value="Разослать событие изменения участникам комнаты" style="rounded=1;arcSize=40;whiteSpace=wrap;html=1;fillColor=#FFFFF0;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;spacing=5;" vertex="1" parent="uc3_c3">
+          <mxGeometry x="40.0" y="1100.0" width="320" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="uc3_c21" value="Обновить карту без перезагрузки экрана" style="rounded=1;arcSize=40;whiteSpace=wrap;html=1;fillColor=#FFFFF0;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;spacing=5;" vertex="1" parent="uc3_c4">
+          <mxGeometry x="40.0" y="1160.0" width="320.0" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="uc3_c22" value="Увидеть единую актуальную версию маршрута" style="rounded=1;arcSize=40;whiteSpace=wrap;html=1;fillColor=#FFFFF0;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;spacing=5;" vertex="1" parent="uc3_c1">
+          <mxGeometry x="50.0" y="1250.0" width="300.0" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="uc3_c23" value="" style="ellipse;shape=endState;html=1;fillColor=#000000;strokeColor=#000000;fontSize=11;spacing=5;" vertex="1" parent="uc3_c1">
+          <mxGeometry x="185.0" y="1340.0" width="30.0" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uc3_e24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=1;endSize=8;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=none;jettySize=0;strokeWidth=1.2;labelBorderColor=none;fillColor=none;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="uc3_c5" target="uc3_c6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uc3_e25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=1;endSize=8;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=none;jettySize=0;strokeWidth=1.2;labelBorderColor=none;fillColor=none;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="uc3_c6" target="uc3_c7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="240.0" y="224.0" />
+              <mxPoint x="640.0" y="224.0" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uc3_e26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=1;endSize=8;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=none;jettySize=0;strokeWidth=1.2;labelBorderColor=none;fillColor=none;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="uc3_c7" target="uc3_c8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="640.0" y="304.0" />
+              <mxPoint x="1040.0" y="304.0" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uc3_e27" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=1;endSize=8;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=none;jettySize=0;strokeWidth=1.2;labelBorderColor=none;fillColor=none;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="uc3_c8" target="uc3_c9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uc3_e28" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=1;endSize=8;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=none;jettySize=0;strokeWidth=1.2;labelBorderColor=none;fillColor=none;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="uc3_c9" target="uc3_c10">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1040.0" y="484.0" />
+              <mxPoint x="240.0" y="484.0" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uc3_e29" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=1;endSize=8;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=none;jettySize=0;strokeWidth=1.2;labelBorderColor=none;fillColor=none;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="uc3_c10" target="uc3_c11">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="240.0" y="574.0" />
+              <mxPoint x="640.0" y="574.0" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uc3_e30" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=1;endSize=8;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=none;jettySize=0;strokeWidth=1.2;labelBorderColor=none;fillColor=none;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="uc3_c11" target="uc3_c12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uc3_e31" value="нет" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=1;endSize=8;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=none;jettySize=0;strokeWidth=1.2;labelBorderColor=none;fillColor=none;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="uc3_c12" target="uc3_c13">
+          <mxGeometry relative="1" as="geometry" x="0.0" y="0">
+            <mxPoint x="-20.0" y="0" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uc3_e32" value="снимок получен" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=1;endSize=8;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=none;jettySize=0;strokeWidth=1.2;labelBorderColor=none;fillColor=none;exitX=0;exitY=0.5;entryX=0;entryY=0.5;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="uc3_c13" target="uc3_c11">
+          <mxGeometry relative="1" as="geometry" x="-0.4505219206680585" y="0">
+            <Array as="points">
+              <mxPoint x="464.0" y="825.0" />
+              <mxPoint x="464.0" y="617.5" />
+            </Array>
+            <mxPoint x="53.0" y="0" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uc3_e33" value="да" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=1;endSize=8;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=none;jettySize=0;strokeWidth=1.2;labelBorderColor=none;fillColor=none;exitX=1;exitY=0.5;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="uc3_c12" target="uc3_c14">
+          <mxGeometry relative="1" as="geometry" x="-0.9136" y="0">
+            <Array as="points">
+              <mxPoint x="824" y="715.0" />
+              <mxPoint x="824" y="640" />
+              <mxPoint x="1040.0" y="640" />
+            </Array>
+            <mxPoint x="0" y="-18.0" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uc3_e34" value="да" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=1;endSize=8;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=none;jettySize=0;strokeWidth=1.2;labelBorderColor=none;fillColor=none;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="uc3_c14" target="uc3_c18">
+          <mxGeometry relative="1" as="geometry" x="0.0" y="0">
+            <mxPoint x="-17.0" y="0" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uc3_e35" value="нет" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=1;endSize=8;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=none;jettySize=0;strokeWidth=1.2;labelBorderColor=none;fillColor=none;exitX=0;exitY=0.5;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="uc3_c14" target="uc3_c16">
+          <mxGeometry relative="1" as="geometry" x="-0.7068131868131868" y="0">
+            <Array as="points">
+              <mxPoint x="894.0" y="715.0" />
+              <mxPoint x="894.0" y="884.0" />
+              <mxPoint x="640.0" y="884.0" />
+            </Array>
+            <mxPoint x="-20.0" y="0" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uc3_e36" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=1;endSize=8;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=none;jettySize=0;strokeWidth=1.2;labelBorderColor=none;fillColor=none;exitX=1;exitY=0.5;entryX=1;entryY=0.5;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="uc3_c15" target="uc3_c20">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1216.0" y="950.0" />
+              <mxPoint x="1216.0" y="1167.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uc3_e38" value="нет" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=1;endSize=8;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=none;jettySize=0;strokeWidth=1.2;labelBorderColor=none;fillColor=none;exitX=0;exitY=0.5;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="uc3_c18" target="uc3_c19">
+          <mxGeometry relative="1" as="geometry" x="-0.8342298288508557" y="0">
+            <Array as="points">
+              <mxPoint x="898.0" y="835.0" />
+              <mxPoint x="898.0" y="908.0" />
+              <mxPoint x="868.0" y="908.0" />
+              <mxPoint x="868.0" y="1014.0" />
+              <mxPoint x="1040.0" y="1014.0" />
+            </Array>
+            <mxPoint x="-20.0" y="0" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uc3_e39" value="да" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=1;endSize=8;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=none;jettySize=0;strokeWidth=1.2;labelBorderColor=none;fillColor=none;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="uc3_c18" target="uc3_c15">
+          <mxGeometry relative="1" as="geometry" x="-0.19999999999999996" y="0">
+            <mxPoint x="-17.0" y="0" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uc3_e40" value="повторить правку" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=1;endSize=8;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=none;jettySize=0;strokeWidth=1.2;labelBorderColor=none;fillColor=none;exitX=0;exitY=0.5;entryX=0;entryY=0.5;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="uc3_c19" target="uc3_c10">
+          <mxGeometry relative="1" as="geometry" x="-0.6416450537236014" y="0">
+            <Array as="points">
+              <mxPoint x="74.0" y="1057.5" />
+              <mxPoint x="74.0" y="530.0" />
+            </Array>
+            <mxPoint x="0" y="-18.0" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uc3_e41" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=1;endSize=8;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=none;jettySize=0;strokeWidth=1.2;labelBorderColor=none;fillColor=none;exitX=1;exitY=0.5;entryX=0;entryY=0.5;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="uc3_c20" target="uc3_c21">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1216.0" y="1167.5" />
+              <mxPoint x="1216.0" y="1227.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uc3_e42" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=1;endSize=8;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=none;jettySize=0;strokeWidth=1.2;labelBorderColor=none;fillColor=none;exitX=0;exitY=0.5;entryX=1;entryY=0.5;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="uc3_c21" target="uc3_c22">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1264.0" y="1227.5" />
+              <mxPoint x="1264.0" y="1317.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uc3_e43" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=1;endSize=8;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=none;jettySize=0;strokeWidth=1.2;labelBorderColor=none;fillColor=none;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="uc3_c22" target="uc3_c23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uc3_e44" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=1;endSize=8;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=none;jettySize=0;strokeWidth=1.2;labelBorderColor=none;fillColor=none;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="uc3_c16" target="uc3_c17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="uc4" name="UC-4 — Экспорт маршрута">
+    <mxGraphModel dx="1600" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1800" pageHeight="1400" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="uc4_c1" value="Организатор поездки" style="swimlane;html=1;startSize=42;fillColor=none;strokeColor=#000000;fontSize=13;fontStyle=1;collapsible=0;whiteSpace=wrap;horizontal=1;swimlaneFillColor=none;fontFamily=Helvetica;container=1;recursiveResize=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="400" height="1310.0" as="geometry" />
+        </mxCell>
+        <mxCell id="uc4_c2" value="Мобильное приложение" style="swimlane;html=1;startSize=42;fillColor=none;strokeColor=#000000;fontSize=13;fontStyle=1;collapsible=0;whiteSpace=wrap;horizontal=1;swimlaneFillColor=none;fontFamily=Helvetica;container=1;recursiveResize=0;" vertex="1" parent="1">
+          <mxGeometry x="440" y="40" width="400" height="1310.0" as="geometry" />
+        </mxCell>
+        <mxCell id="uc4_c3" value="Серверная часть" style="swimlane;html=1;startSize=42;fillColor=none;strokeColor=#000000;fontSize=13;fontStyle=1;collapsible=0;whiteSpace=wrap;horizontal=1;swimlaneFillColor=none;fontFamily=Helvetica;container=1;recursiveResize=0;" vertex="1" parent="1">
+          <mxGeometry x="840" y="40" width="400" height="1310.0" as="geometry" />
+        </mxCell>
+        <mxCell id="uc4_c4" value="ОС устройства и внешнее приложение" style="swimlane;html=1;startSize=42;fillColor=none;strokeColor=#000000;fontSize=13;fontStyle=1;collapsible=0;whiteSpace=wrap;horizontal=1;swimlaneFillColor=none;fontFamily=Helvetica;container=1;recursiveResize=0;" vertex="1" parent="1">
+          <mxGeometry x="1240" y="40" width="400" height="1310.0" as="geometry" />
+        </mxCell>
+        <mxCell id="uc4_c5" value="" style="ellipse;html=1;fillColor=#000000;strokeColor=#000000;fontSize=11;spacing=5;" vertex="1" parent="uc4_c1">
+          <mxGeometry x="185.0" y="60.0" width="30.0" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uc4_c6" value="Выбрать экспорт маршрута во внешнее навигационное приложение" style="rounded=1;arcSize=40;whiteSpace=wrap;html=1;fillColor=#FFFFF0;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;spacing=5;" vertex="1" parent="uc4_c1">
+          <mxGeometry x="40.0" y="120.0" width="320.0" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uc4_c7" value="Собрать точки актуальной версии маршрута" style="rounded=1;arcSize=40;whiteSpace=wrap;html=1;fillColor=#FFFFF0;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;spacing=5;" vertex="1" parent="uc4_c3">
+          <mxGeometry x="40.0" y="210.0" width="320" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="uc4_c8" value="Число точек не превышает лимит протокола?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontSize=10;fontFamily=Helvetica;spacing=5;" vertex="1" parent="uc4_c3">
+          <mxGeometry x="70.0" y="300.0" width="260" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="uc4_c9" value="Исключить точки, добавленные из точек интереса, и отметить усечение" style="rounded=1;arcSize=40;whiteSpace=wrap;html=1;fillColor=#FFFFF0;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;spacing=5;" vertex="1" parent="uc4_c3">
+          <mxGeometry x="40.0" y="430.0" width="320" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="uc4_c10" value="Сформировать ссылку-протокол с координатами точек маршрута" style="rounded=1;arcSize=40;whiteSpace=wrap;html=1;fillColor=#FFFFF0;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;spacing=5;" vertex="1" parent="uc4_c3">
+          <mxGeometry x="40.0" y="540.0" width="320" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uc4_c11" value="Показать подтверждение и признак усечения маршрута" style="rounded=1;arcSize=40;whiteSpace=wrap;html=1;fillColor=#FFFFF0;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;spacing=5;" vertex="1" parent="uc4_c2">
+          <mxGeometry x="40.0" y="640.0" width="320" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uc4_c12" value="Подтвердить переход по сформированной ссылке" style="rounded=1;arcSize=40;whiteSpace=wrap;html=1;fillColor=#FFFFF0;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;spacing=5;" vertex="1" parent="uc4_c1">
+          <mxGeometry x="40.0" y="740.0" width="320.0" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="uc4_c13" value="Поддерживаемое приложение установлено?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontSize=10;fontFamily=Helvetica;spacing=5;" vertex="1" parent="uc4_c2">
+          <mxGeometry x="70.0" y="820.0" width="260" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="uc4_c14" value="Предложить открыть маршрут веб-ссылкой на карту" style="rounded=1;arcSize=40;whiteSpace=wrap;html=1;fillColor=#FFFFF0;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;spacing=5;" vertex="1" parent="uc4_c2">
+          <mxGeometry x="40.0" y="960.0" width="320" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uc4_c15" value="" style="ellipse;shape=endState;html=1;fillColor=#000000;strokeColor=#000000;fontSize=11;spacing=5;" vertex="1" parent="uc4_c2">
+          <mxGeometry x="185.0" y="1050.0" width="30.0" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uc4_c16" value="Открыть навигационное приложение с переданными точками" style="rounded=1;arcSize=40;whiteSpace=wrap;html=1;fillColor=#FFFFF0;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;spacing=5;" vertex="1" parent="uc4_c4">
+          <mxGeometry x="40.0" y="960.0" width="320" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uc4_c17" value="Проложить маршрут через переданные точки" style="rounded=1;arcSize=40;whiteSpace=wrap;html=1;fillColor=#FFFFF0;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;spacing=5;" vertex="1" parent="uc4_c4">
+          <mxGeometry x="40.0" y="1060.0" width="320" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="uc4_c18" value="Запустить навигацию по маршруту" style="rounded=1;arcSize=40;whiteSpace=wrap;html=1;fillColor=#FFFFF0;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;spacing=5;" vertex="1" parent="uc4_c1">
+          <mxGeometry x="40.0" y="1160.0" width="320.0" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="uc4_c19" value="" style="ellipse;shape=endState;html=1;fillColor=#000000;strokeColor=#000000;fontSize=11;spacing=5;" vertex="1" parent="uc4_c1">
+          <mxGeometry x="185.0" y="1250.0" width="30.0" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uc4_e20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=1;endSize=8;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=none;jettySize=0;strokeWidth=1.2;labelBorderColor=none;fillColor=none;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="uc4_c5" target="uc4_c6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uc4_e21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=1;endSize=8;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=none;jettySize=0;strokeWidth=1.2;labelBorderColor=none;fillColor=none;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="uc4_c6" target="uc4_c7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="240.0" y="234.0" />
+              <mxPoint x="1040.0" y="234.0" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uc4_e22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=1;endSize=8;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=none;jettySize=0;strokeWidth=1.2;labelBorderColor=none;fillColor=none;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="uc4_c7" target="uc4_c8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uc4_e23" value="нет" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=1;endSize=8;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=none;jettySize=0;strokeWidth=1.2;labelBorderColor=none;fillColor=none;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="uc4_c8" target="uc4_c9">
+          <mxGeometry relative="1" as="geometry" x="-0.19999999999999996" y="0">
+            <mxPoint x="-20.0" y="0" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uc4_e24" value="да" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=1;endSize=8;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=none;jettySize=0;strokeWidth=1.2;labelBorderColor=none;fillColor=none;exitX=1;exitY=0.5;entryX=1;entryY=0.5;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="uc4_c8" target="uc4_c10">
+          <mxGeometry relative="1" as="geometry" x="-0.90298769771529" y="0">
+            <Array as="points">
+              <mxPoint x="1216.0" y="387.5" />
+              <mxPoint x="1216.0" y="610.0" />
+            </Array>
+            <mxPoint x="0" y="-18.0" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uc4_e25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=1;endSize=8;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=none;jettySize=0;strokeWidth=1.2;labelBorderColor=none;fillColor=none;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="uc4_c9" target="uc4_c10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uc4_e26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=1;endSize=8;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=none;jettySize=0;strokeWidth=1.2;labelBorderColor=none;fillColor=none;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="uc4_c10" target="uc4_c11">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1040.0" y="664.0" />
+              <mxPoint x="640.0" y="664.0" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uc4_e27" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=1;endSize=8;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=none;jettySize=0;strokeWidth=1.2;labelBorderColor=none;fillColor=none;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="uc4_c11" target="uc4_c12">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="640.0" y="764.0" />
+              <mxPoint x="240.0" y="764.0" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uc4_e28" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=1;endSize=8;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=none;jettySize=0;strokeWidth=1.2;labelBorderColor=none;fillColor=none;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="uc4_c12" target="uc4_c13">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="240.0" y="844.0" />
+              <mxPoint x="640.0" y="844.0" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uc4_e29" value="нет" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=1;endSize=8;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=none;jettySize=0;strokeWidth=1.2;labelBorderColor=none;fillColor=none;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="uc4_c13" target="uc4_c14">
+          <mxGeometry relative="1" as="geometry" x="-0.19999999999999996" y="0">
+            <mxPoint x="-20.0" y="0" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uc4_e30" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=1;endSize=8;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=none;jettySize=0;strokeWidth=1.2;labelBorderColor=none;fillColor=none;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="uc4_c14" target="uc4_c15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uc4_e31" value="да" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=1;endSize=8;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=none;jettySize=0;strokeWidth=1.2;labelBorderColor=none;fillColor=none;exitX=1;exitY=0.5;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="uc4_c13" target="uc4_c16">
+          <mxGeometry relative="1" as="geometry" x="-0.8978360655737705" y="0">
+            <Array as="points">
+              <mxPoint x="786.0" y="907.5" />
+              <mxPoint x="786.0" y="984.0" />
+              <mxPoint x="1440.0" y="984.0" />
+            </Array>
+            <mxPoint x="17.0" y="0" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uc4_e32" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=1;endSize=8;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=none;jettySize=0;strokeWidth=1.2;labelBorderColor=none;fillColor=none;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="uc4_c16" target="uc4_c17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uc4_e33" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=1;endSize=8;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=none;jettySize=0;strokeWidth=1.2;labelBorderColor=none;fillColor=none;exitX=0;exitY=0.5;entryX=1;entryY=0.5;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="uc4_c17" target="uc4_c18">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1264.0" y="1127.5" />
+              <mxPoint x="1264.0" y="1225.0" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uc4_e34" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=1;endSize=8;strokeColor=#000000;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=none;jettySize=0;strokeWidth=1.2;labelBorderColor=none;fillColor=none;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="uc4_c18" target="uc4_c19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,728 @@
+<mxfile host="Electron" compressed="false" pages="4">
+  <diagram id="erd-0" name="Обобщённая ERD">
+    <mxGraphModel dx="1300" dy="1033" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="2000" pageHeight="1300" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="erd0_c2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;align=center;verticalAlign=middle;fontSize=13;fontStyle=1;fontFamily=Helvetica;" value="Согласие&#xa;(consent)" vertex="1">
+          <mxGeometry height="80" width="260" x="500" as="geometry" />
+        </mxCell>
+        <mxCell id="erd0_c3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;align=center;verticalAlign=middle;fontSize=13;fontStyle=1;fontFamily=Helvetica;" value="Сессия обновления&#xa;(refresh_session)" vertex="1">
+          <mxGeometry height="80" width="260" x="800" as="geometry" />
+        </mxCell>
+        <mxCell id="erd0_c4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;align=center;verticalAlign=middle;fontSize=13;fontStyle=1;fontFamily=Helvetica;" value="Запрос на данные&#xa;(data_request)" vertex="1">
+          <mxGeometry height="80" width="260" x="1120" as="geometry" />
+        </mxCell>
+        <mxCell id="erd0_c5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;align=center;verticalAlign=middle;fontSize=13;fontStyle=1;fontFamily=Helvetica;" value="Пользователь&lt;br&gt;(user)" vertex="1">
+          <mxGeometry height="80" width="260" x="800" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="erd0_c6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;align=center;verticalAlign=middle;fontSize=13;fontStyle=1;fontFamily=Helvetica;" value="Поездка&#xa;(trip)" vertex="1">
+          <mxGeometry height="80" width="260" x="800" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="erd0_c7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;align=center;verticalAlign=middle;fontSize=13;fontStyle=1;fontFamily=Helvetica;" value="Участник поездки&#xa;(trip_participant)" vertex="1">
+          <mxGeometry height="80" width="260" x="490" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="erd0_c8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;align=center;verticalAlign=middle;fontSize=13;fontStyle=1;fontFamily=Helvetica;" value="Точка маршрута&#xa;(route_point)" vertex="1">
+          <mxGeometry height="80" width="260" x="480" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="erd0_c9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;align=center;verticalAlign=middle;fontSize=13;fontStyle=1;fontFamily=Helvetica;" value="Версия маршрута&#xa;(route_version)" vertex="1">
+          <mxGeometry height="80" width="260" x="800" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="erd0_c10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;align=center;verticalAlign=middle;fontSize=13;fontStyle=1;fontFamily=Helvetica;" value="Ссылка-приглашение&#xa;(invite_link)" vertex="1">
+          <mxGeometry height="80" width="260" x="1480" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="erd0_c11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;align=center;verticalAlign=middle;fontSize=13;fontStyle=1;fontFamily=Helvetica;" value="Категория подбора&#xa;(trip_poi_category)" vertex="1">
+          <mxGeometry height="80" width="260" x="1480" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="erd0_c12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;align=center;verticalAlign=middle;fontSize=13;fontStyle=1;fontFamily=Helvetica;" value="Событие изменения&#xa;(edit_event)" vertex="1">
+          <mxGeometry height="80" width="260" x="480" y="710" as="geometry" />
+        </mxCell>
+        <mxCell id="erd0_c13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;align=center;verticalAlign=middle;fontSize=13;fontStyle=1;fontFamily=Helvetica;" value="Экспорт маршрута&#xa;(export_record)" vertex="1">
+          <mxGeometry height="80" width="260" x="1200" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="erd0_c14" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;align=center;verticalAlign=middle;fontSize=13;fontStyle=1;fontFamily=Helvetica;" value="Уведомление&#xa;(notification)" vertex="1">
+          <mxGeometry height="80" width="260" x="1120" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="erd0_c15" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;align=center;verticalAlign=middle;fontSize=13;fontStyle=1;fontFamily=Helvetica;" value="Переход по приглашению&#xa;(invite_use)" vertex="1">
+          <mxGeometry height="80" width="260" x="1480" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="erd0_c16" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;align=center;verticalAlign=middle;fontSize=13;fontStyle=1;fontFamily=Helvetica;" value="Категория точек интереса&#xa;(poi_category)" vertex="1">
+          <mxGeometry height="80" width="260" x="1480" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="erd0_e17" edge="1" parent="1" source="erd0_c5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;endArrow=oval;endFill=1;endSize=8;strokeColor=#000000;fontSize=12;labelBackgroundColor=none;fontFamily=Helvetica;exitX=0;exitY=0.2;entryX=0.5;entryY=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;labelBorderColor=none;fillColor=none;strokeWidth=1.3;jettySize=20;orthogonalLoop=1;" target="erd0_c2" value="принимает  P">
+          <mxGeometry relative="1" x="-0.1818" as="geometry">
+            <mxPoint y="-18" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="erd0_e19" edge="1" parent="1" source="erd0_c5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;endArrow=oval;endFill=1;endSize=8;strokeColor=#000000;fontSize=12;labelBackgroundColor=none;fontFamily=Helvetica;exitX=0.5;exitY=0;entryX=0.5;entryY=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;labelBorderColor=none;fillColor=none;strokeWidth=1.3;jettySize=20;orthogonalLoop=1;" target="erd0_c3" value="открывает">
+          <mxGeometry relative="1" x="0.04762" as="geometry">
+            <mxPoint y="-18" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="erd0_e21" edge="1" parent="1" source="erd0_c5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;endArrow=oval;endFill=1;endSize=8;strokeColor=#000000;fontSize=12;labelBackgroundColor=none;fontFamily=Helvetica;exitX=1;exitY=0.5;entryX=0.5;entryY=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;labelBorderColor=none;fillColor=none;strokeWidth=1.3;jettySize=20;orthogonalLoop=1;" target="erd0_c4" value="подаёт">
+          <mxGeometry relative="1" x="-0.0242" as="geometry">
+            <mxPoint y="-18" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="erd0_e23" edge="1" parent="1" source="erd0_c5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;endArrow=oval;endFill=1;endSize=8;strokeColor=#000000;fontSize=12;labelBackgroundColor=none;fontFamily=Helvetica;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;labelBorderColor=none;fillColor=none;strokeWidth=1.3;jettySize=20;orthogonalLoop=1;" target="erd0_c6" value="владеет  P">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="56" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="erd0_e25" edge="1" parent="1" source="erd0_c5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=oval;endFill=1;endSize=8;strokeColor=#000000;fontSize=12;labelBackgroundColor=none;fontFamily=Helvetica;exitX=0;exitY=0.75;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;labelBorderColor=none;fillColor=none;strokeWidth=1.3;jettySize=20;orthogonalLoop=1;" target="erd0_c7" value="состоит в">
+          <mxGeometry relative="1" x="-0.17308" as="geometry">
+            <mxPoint y="-18" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="erd0_e27" edge="1" parent="1" source="erd0_c6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=oval;endFill=1;endSize=8;strokeColor=#000000;fontSize=12;labelBackgroundColor=none;fontFamily=Helvetica;exitX=0;exitY=0.25;entryX=0.5;entryY=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;labelBorderColor=none;fillColor=none;strokeWidth=1.3;jettySize=20;orthogonalLoop=1;" target="erd0_c7" value="объединяет  P">
+          <mxGeometry relative="1" x="-0.52" as="geometry">
+            <mxPoint y="-18" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="erd0_e29" edge="1" parent="1" source="erd0_c6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;endArrow=oval;endFill=1;endSize=8;strokeColor=#000000;fontSize=12;labelBackgroundColor=none;fontFamily=Helvetica;exitX=0;exitY=0.75;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;labelBorderColor=none;fillColor=none;strokeWidth=1.3;jettySize=20;orthogonalLoop=1;" target="erd0_c8" value="содержит">
+          <mxGeometry relative="1" x="-0.45" as="geometry">
+            <mxPoint y="-18" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="erd0_e31" edge="1" parent="1" source="erd0_c6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;endArrow=oval;endFill=1;endSize=8;strokeColor=#000000;fontSize=12;labelBackgroundColor=none;fontFamily=Helvetica;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;labelBorderColor=none;fillColor=none;strokeWidth=1.3;jettySize=20;orthogonalLoop=1;" target="erd0_c9" value="имеет">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="37" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="erd0_e33" edge="1" parent="1" source="erd0_c6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;endArrow=oval;endFill=1;endSize=8;strokeColor=#000000;fontSize=12;labelBackgroundColor=none;fontFamily=Helvetica;exitX=1;exitY=0.5;entryX=0;entryY=0.5;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;labelBorderColor=none;fillColor=none;strokeWidth=1.3;jettySize=20;orthogonalLoop=1;" target="erd0_c10" value="открывается по">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="-18" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="erd0_e35" edge="1" parent="1" source="erd0_c6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=oval;endFill=1;endSize=8;strokeColor=#000000;fontSize=12;labelBackgroundColor=none;fontFamily=Helvetica;exitX=1;exitY=0.125;entryX=0;entryY=0.5;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;labelBorderColor=none;fillColor=none;strokeWidth=1.3;jettySize=20;orthogonalLoop=1;" target="erd0_c11" value="настраивается">
+          <mxGeometry relative="1" x="-0.3794" as="geometry">
+            <mxPoint y="-18" as="offset" />
+            <Array as="points">
+              <mxPoint x="1440" y="490" />
+              <mxPoint x="1440" y="230" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="erd0_e37" edge="1" parent="1" source="erd0_c6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;endArrow=oval;endFill=1;endSize=8;strokeColor=#000000;fontSize=12;labelBackgroundColor=none;fontFamily=Helvetica;exitX=0.15;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;labelBorderColor=none;fillColor=none;strokeWidth=1.3;jettySize=20;orthogonalLoop=1;" target="erd0_c12" value="изменяется">
+          <mxGeometry relative="1" x="0.22398" as="geometry">
+            <mxPoint y="-18" as="offset" />
+            <Array as="points">
+              <mxPoint x="839" y="690" />
+              <mxPoint x="610" y="690" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="erd0_e39" edge="1" parent="1" source="erd0_c6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;endArrow=oval;endFill=1;endSize=8;strokeColor=#000000;fontSize=12;labelBackgroundColor=none;fontFamily=Helvetica;exitX=1;exitY=0.75;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;labelBorderColor=none;fillColor=none;strokeWidth=1.3;jettySize=20;orthogonalLoop=1;" target="erd0_c13" value="экспортируется">
+          <mxGeometry relative="1" x="0.46552" as="geometry">
+            <mxPoint x="71.19999999999999" y="20" as="offset" />
+            <Array as="points">
+              <mxPoint x="1330" y="540" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="erd0_e41" edge="1" parent="1" source="erd0_c6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;endArrow=oval;endFill=1;endSize=8;strokeColor=#000000;fontSize=12;labelBackgroundColor=none;fontFamily=Helvetica;startArrow=diamondThin;startFill=0;startSize=10;exitX=0.85;exitY=0;entryX=0;entryY=0.5;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;labelBorderColor=none;fillColor=none;strokeWidth=1.3;jettySize=20;orthogonalLoop=1;" target="erd0_c14" value="упоминается в">
+          <mxGeometry relative="1" x="0.38062" as="geometry">
+            <mxPoint y="-18" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="erd0_e43" edge="1" parent="1" source="erd0_c10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;endArrow=oval;endFill=1;endSize=8;strokeColor=#000000;fontSize=12;labelBackgroundColor=none;fontFamily=Helvetica;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;labelBorderColor=none;fillColor=none;strokeWidth=1.3;jettySize=20;orthogonalLoop=1;" target="erd0_c15" value="используется">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="63.599999999999994" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="erd0_e45" edge="1" parent="1" source="erd0_c16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=oval;endFill=1;endSize=8;strokeColor=#000000;fontSize=12;labelBackgroundColor=none;fontFamily=Helvetica;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;labelBorderColor=none;fillColor=none;strokeWidth=1.3;jettySize=20;orthogonalLoop=1;" target="erd0_c11" value="включается в">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="63.599999999999994" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="erd0_e47" edge="1" parent="1" source="erd0_c9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;endArrow=oval;endFill=1;endSize=8;strokeColor=#000000;fontSize=12;labelBackgroundColor=none;fontFamily=Helvetica;exitX=1;exitY=0.5;entryX=0;entryY=0.5;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;labelBorderColor=none;fillColor=none;strokeWidth=1.3;jettySize=20;orthogonalLoop=1;" target="erd0_c13" value="передаётся в">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="-18" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="erd-1" name="Пользователь, доступ и согласия">
+    <mxGraphModel dx="1266" dy="769" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="2000" pageHeight="1300" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="erd1_c1" parent="1" style="swimlane;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;swimlaneLine=1;strokeColor=#000000;fillColor=#FFFFFF;startSize=28;fontSize=11;fontStyle=1;fontFamily=Helvetica;" value="Пользователь(user)" vertex="1">
+          <mxGeometry height="168" width="380" x="480" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="erd1_c2" connectable="0" parent="erd1_c1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="id: uuid (PK)" vertex="1">
+          <mxGeometry height="22" width="380" y="28" as="geometry" />
+        </mxCell>
+        <mxCell id="erd1_c3" connectable="0" parent="erd1_c1" style="line;strokeWidth=1;strokeColor=#000000;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+          <mxGeometry height="8" width="380" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="erd1_c4" connectable="0" parent="erd1_c1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="email: citext (AK1)" vertex="1">
+          <mxGeometry height="22" width="380" y="58" as="geometry" />
+        </mxCell>
+        <mxCell id="erd1_c5" connectable="0" parent="erd1_c1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="display_name: varchar(60)" vertex="1">
+          <mxGeometry height="22" width="380" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="erd1_c6" connectable="0" parent="erd1_c1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="avatar_seed: varchar(32)" vertex="1">
+          <mxGeometry height="22" width="380" y="102" as="geometry" />
+        </mxCell>
+        <mxCell id="erd1_c7" connectable="0" parent="erd1_c1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="created_at: timestamptz" vertex="1">
+          <mxGeometry height="22" width="380" y="124" as="geometry" />
+        </mxCell>
+        <mxCell id="erd1_c8" connectable="0" parent="erd1_c1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="deleted_at: timestamptz NULL" vertex="1">
+          <mxGeometry height="22" width="380" y="146" as="geometry" />
+        </mxCell>
+        <mxCell id="erd1_c18" parent="1" style="swimlane;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;swimlaneLine=1;strokeColor=#000000;fillColor=#FFFFFF;startSize=28;fontSize=11;fontStyle=1;fontFamily=Helvetica;" value="Согласие(consent)" vertex="1">
+          <mxGeometry height="146" width="380" x="60" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="erd1_c19" connectable="0" parent="erd1_c18" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="id: uuid (PK)" vertex="1">
+          <mxGeometry height="22" width="380" y="28" as="geometry" />
+        </mxCell>
+        <mxCell id="erd1_c20" connectable="0" parent="erd1_c18" style="line;strokeWidth=1;strokeColor=#000000;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+          <mxGeometry height="8" width="380" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="erd1_c21" connectable="0" parent="erd1_c18" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="user_id: uuid (FK)" vertex="1">
+          <mxGeometry height="22" width="380" y="58" as="geometry" />
+        </mxCell>
+        <mxCell id="erd1_c22" connectable="0" parent="erd1_c18" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="doc_kind: consent_kind" vertex="1">
+          <mxGeometry height="22" width="380" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="erd1_c23" connectable="0" parent="erd1_c18" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="doc_version: varchar(16)" vertex="1">
+          <mxGeometry height="22" width="380" y="102" as="geometry" />
+        </mxCell>
+        <mxCell id="erd1_c24" connectable="0" parent="erd1_c18" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="accepted_at: timestamptz" vertex="1">
+          <mxGeometry height="22" width="380" y="124" as="geometry" />
+        </mxCell>
+        <mxCell id="erd1_c25" parent="1" style="swimlane;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;swimlaneLine=1;strokeColor=#000000;fillColor=#FFFFFF;startSize=28;fontSize=11;fontStyle=1;fontFamily=Helvetica;" value="Сессия обновления(refresh_session)" vertex="1">
+          <mxGeometry height="168" width="380" x="480" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="erd1_c26" connectable="0" parent="erd1_c25" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="id: uuid (PK)" vertex="1">
+          <mxGeometry height="22" width="380" y="28" as="geometry" />
+        </mxCell>
+        <mxCell id="erd1_c27" connectable="0" parent="erd1_c25" style="line;strokeWidth=1;strokeColor=#000000;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+          <mxGeometry height="8" width="380" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="erd1_c28" connectable="0" parent="erd1_c25" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="user_id: uuid (FK)" vertex="1">
+          <mxGeometry height="22" width="380" y="58" as="geometry" />
+        </mxCell>
+        <mxCell id="erd1_c29" connectable="0" parent="erd1_c25" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="token_hash: char(64) (AK1)" vertex="1">
+          <mxGeometry height="22" width="380" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="erd1_c30" connectable="0" parent="erd1_c25" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="issued_at: timestamptz" vertex="1">
+          <mxGeometry height="22" width="380" y="102" as="geometry" />
+        </mxCell>
+        <mxCell id="erd1_c31" connectable="0" parent="erd1_c25" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="expires_at: timestamptz" vertex="1">
+          <mxGeometry height="22" width="380" y="124" as="geometry" />
+        </mxCell>
+        <mxCell id="erd1_c32" connectable="0" parent="erd1_c25" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="revoked_at: timestamptz NULL" vertex="1">
+          <mxGeometry height="22" width="380" y="146" as="geometry" />
+        </mxCell>
+        <mxCell id="erd1_c33" parent="1" style="swimlane;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;swimlaneLine=1;strokeColor=#000000;fillColor=#FFFFFF;startSize=28;fontSize=11;fontStyle=1;fontFamily=Helvetica;" value="Запрос на данные(data_request)" vertex="1">
+          <mxGeometry height="168" width="380" x="900" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="erd1_c34" connectable="0" parent="erd1_c33" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="id: uuid (PK)" vertex="1">
+          <mxGeometry height="22" width="380" y="28" as="geometry" />
+        </mxCell>
+        <mxCell id="erd1_c35" connectable="0" parent="erd1_c33" style="line;strokeWidth=1;strokeColor=#000000;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+          <mxGeometry height="8" width="380" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="erd1_c36" connectable="0" parent="erd1_c33" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="user_id: uuid (FK)" vertex="1">
+          <mxGeometry height="22" width="380" y="58" as="geometry" />
+        </mxCell>
+        <mxCell id="erd1_c37" connectable="0" parent="erd1_c33" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="kind: request_kind" vertex="1">
+          <mxGeometry height="22" width="380" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="erd1_c38" connectable="0" parent="erd1_c33" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="status: request_status" vertex="1">
+          <mxGeometry height="22" width="380" y="102" as="geometry" />
+        </mxCell>
+        <mxCell id="erd1_c39" connectable="0" parent="erd1_c33" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="requested_at: timestamptz" vertex="1">
+          <mxGeometry height="22" width="380" y="124" as="geometry" />
+        </mxCell>
+        <mxCell id="erd1_c40" connectable="0" parent="erd1_c33" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="completed_at: timestamptz NULL" vertex="1">
+          <mxGeometry height="22" width="380" y="146" as="geometry" />
+        </mxCell>
+        <mxCell id="erd1_e41" edge="1" parent="1" source="erd1_c1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;endArrow=oval;endFill=1;endSize=8;strokeColor=#000000;fontSize=12;labelBackgroundColor=none;fontFamily=Helvetica;exitX=0.1;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;labelBorderColor=none;fillColor=none;strokeWidth=1.3;jettySize=20;orthogonalLoop=1;" target="erd1_c18" value="принимает  P">
+          <mxGeometry relative="1" x="0.11304" as="geometry">
+            <mxPoint y="-18" as="offset" />
+            <Array as="points">
+              <mxPoint x="518" y="350" />
+              <mxPoint x="250" y="350" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="erd1_e43" edge="1" parent="1" source="erd1_c1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;endArrow=oval;endFill=1;endSize=8;strokeColor=#000000;fontSize=12;labelBackgroundColor=none;fontFamily=Helvetica;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;labelBorderColor=none;fillColor=none;strokeWidth=1.3;jettySize=20;orthogonalLoop=1;" target="erd1_c25" value="открывает">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="52.199999999999996" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="erd1_e45" edge="1" parent="1" source="erd1_c1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;endArrow=oval;endFill=1;endSize=8;strokeColor=#000000;fontSize=12;labelBackgroundColor=none;fontFamily=Helvetica;exitX=0.9;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;labelBorderColor=none;fillColor=none;strokeWidth=1.3;jettySize=20;orthogonalLoop=1;" target="erd1_c33" value="подаёт">
+          <mxGeometry relative="1" x="0.11304" as="geometry">
+            <mxPoint y="-18" as="offset" />
+            <Array as="points">
+              <mxPoint x="822" y="350" />
+              <mxPoint x="1090" y="350" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="erd-2" name="Поездки, точки и версии">
+    <mxGraphModel dx="1451" dy="882" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="2000" pageHeight="1300" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="erd2_c1" parent="1" style="swimlane;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;swimlaneLine=1;strokeColor=#000000;fillColor=#FFFFFF;startSize=28;fontSize=11;fontStyle=1;fontFamily=Helvetica;" value="Пользователь(user)" vertex="1">
+          <mxGeometry height="80" width="300" x="80" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="erd2_c2" connectable="0" parent="erd2_c1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="id: uuid (PK)" vertex="1">
+          <mxGeometry height="22" width="300" y="28" as="geometry" />
+        </mxCell>
+        <mxCell id="erd2_c3" connectable="0" parent="erd2_c1" style="line;strokeWidth=1;strokeColor=#000000;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+          <mxGeometry height="8" width="300" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="erd2_c4" connectable="0" parent="erd2_c1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="email: citext (AK1)" vertex="1">
+          <mxGeometry height="22" width="300" y="58" as="geometry" />
+        </mxCell>
+        <mxCell id="erd2_c5" parent="1" style="swimlane;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;swimlaneLine=1;strokeColor=#000000;fillColor=#FFFFFF;startSize=28;fontSize=11;fontStyle=1;fontFamily=Helvetica;" value="Поездка(trip)" vertex="1">
+          <mxGeometry height="256" width="400" x="600" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="erd2_c6" connectable="0" parent="erd2_c5" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="id: uuid (PK)" vertex="1">
+          <mxGeometry height="22" width="400" y="28" as="geometry" />
+        </mxCell>
+        <mxCell id="erd2_c7" connectable="0" parent="erd2_c5" style="line;strokeWidth=1;strokeColor=#000000;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+          <mxGeometry height="8" width="400" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="erd2_c8" connectable="0" parent="erd2_c5" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="owner_id: uuid (FK)" vertex="1">
+          <mxGeometry height="22" width="400" y="58" as="geometry" />
+        </mxCell>
+        <mxCell id="erd2_c9" connectable="0" parent="erd2_c5" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="title: varchar(100)" vertex="1">
+          <mxGeometry height="22" width="400" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="erd2_c10" connectable="0" parent="erd2_c5" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="poi_radius_m: integer" vertex="1">
+          <mxGeometry height="22" width="400" y="102" as="geometry" />
+        </mxCell>
+        <mxCell id="erd2_c11" connectable="0" parent="erd2_c5" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="max_participants: smallint" vertex="1">
+          <mxGeometry height="22" width="400" y="124" as="geometry" />
+        </mxCell>
+        <mxCell id="erd2_c12" connectable="0" parent="erd2_c5" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="editors_can_change_radius: boolean" vertex="1">
+          <mxGeometry height="22" width="400" y="146" as="geometry" />
+        </mxCell>
+        <mxCell id="erd2_c13" connectable="0" parent="erd2_c5" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="status: trip_status" vertex="1">
+          <mxGeometry height="22" width="400" y="168" as="geometry" />
+        </mxCell>
+        <mxCell id="erd2_c14" connectable="0" parent="erd2_c5" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="created_at: timestamptz" vertex="1">
+          <mxGeometry height="22" width="400" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="erd2_c15" connectable="0" parent="erd2_c5" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="updated_at: timestamptz" vertex="1">
+          <mxGeometry height="22" width="400" y="212" as="geometry" />
+        </mxCell>
+        <mxCell id="erd2_c16" connectable="0" parent="erd2_c5" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="deleted_at: timestamptz NULL" vertex="1">
+          <mxGeometry height="22" width="400" y="234" as="geometry" />
+        </mxCell>
+        <mxCell id="erd2_c17" parent="1" style="swimlane;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;swimlaneLine=1;strokeColor=#000000;fillColor=#FFFFFF;startSize=28;fontSize=11;fontStyle=1;fontFamily=Helvetica;" value="Категория точек интереса(poi_category)" vertex="1">
+          <mxGeometry height="124" width="360" x="1220" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="erd2_c18" connectable="0" parent="erd2_c17" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="code: varchar(32) (PK)" vertex="1">
+          <mxGeometry height="22" width="360" y="28" as="geometry" />
+        </mxCell>
+        <mxCell id="erd2_c19" connectable="0" parent="erd2_c17" style="line;strokeWidth=1;strokeColor=#000000;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+          <mxGeometry height="8" width="360" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="erd2_c20" connectable="0" parent="erd2_c17" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="title: varchar(60)" vertex="1">
+          <mxGeometry height="22" width="360" y="58" as="geometry" />
+        </mxCell>
+        <mxCell id="erd2_c21" connectable="0" parent="erd2_c17" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="provider_rubric: varchar(32)" vertex="1">
+          <mxGeometry height="22" width="360" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="erd2_c22" connectable="0" parent="erd2_c17" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="is_active: boolean" vertex="1">
+          <mxGeometry height="22" width="360" y="102" as="geometry" />
+        </mxCell>
+        <mxCell id="erd2_c23" parent="1" style="swimlane;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;swimlaneLine=1;strokeColor=#000000;fillColor=#FFFFFF;startSize=28;fontSize=11;fontStyle=1;fontFamily=Helvetica;" value="Категория подбора(trip_poi_category)" vertex="1">
+          <mxGeometry height="102" width="360" x="1220" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="erd2_c24" connectable="0" parent="erd2_c23" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="trip_id: uuid (PK, FK)" vertex="1">
+          <mxGeometry height="22" width="360" y="28" as="geometry" />
+        </mxCell>
+        <mxCell id="erd2_c25" connectable="0" parent="erd2_c23" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="category_code: varchar(32) (PK, FK)" vertex="1">
+          <mxGeometry height="22" width="360" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="erd2_c26" connectable="0" parent="erd2_c23" style="line;strokeWidth=1;strokeColor=#000000;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+          <mxGeometry height="8" width="360" y="72" as="geometry" />
+        </mxCell>
+        <mxCell id="erd2_c27" connectable="0" parent="erd2_c23" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="added_at: timestamptz" vertex="1">
+          <mxGeometry height="22" width="360" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="erd2_c28" parent="1" style="swimlane;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;swimlaneLine=1;strokeColor=#000000;fillColor=#FFFFFF;startSize=28;fontSize=11;fontStyle=1;fontFamily=Helvetica;" value="Точка маршрута(route_point)" vertex="1">
+          <mxGeometry height="300" width="400" x="80" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="erd2_c29" connectable="0" parent="erd2_c28" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="id: uuid (PK)" vertex="1">
+          <mxGeometry height="22" width="400" y="28" as="geometry" />
+        </mxCell>
+        <mxCell id="erd2_c30" connectable="0" parent="erd2_c28" style="line;strokeWidth=1;strokeColor=#000000;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+          <mxGeometry height="8" width="400" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="erd2_c31" connectable="0" parent="erd2_c28" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="trip_id: uuid (FK, AK1.1)" vertex="1">
+          <mxGeometry height="22" width="400" y="58" as="geometry" />
+        </mxCell>
+        <mxCell id="erd2_c32" connectable="0" parent="erd2_c28" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="position: integer (AK1.2)" vertex="1">
+          <mxGeometry height="22" width="400" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="erd2_c33" connectable="0" parent="erd2_c28" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="kind: point_kind" vertex="1">
+          <mxGeometry height="22" width="400" y="102" as="geometry" />
+        </mxCell>
+        <mxCell id="erd2_c34" connectable="0" parent="erd2_c28" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="lat: numeric(9,6)" vertex="1">
+          <mxGeometry height="22" width="400" y="124" as="geometry" />
+        </mxCell>
+        <mxCell id="erd2_c35" connectable="0" parent="erd2_c28" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="lon: numeric(9,6)" vertex="1">
+          <mxGeometry height="22" width="400" y="146" as="geometry" />
+        </mxCell>
+        <mxCell id="erd2_c36" connectable="0" parent="erd2_c28" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="title: varchar(120)" vertex="1">
+          <mxGeometry height="22" width="400" y="168" as="geometry" />
+        </mxCell>
+        <mxCell id="erd2_c37" connectable="0" parent="erd2_c28" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="address: varchar(200)" vertex="1">
+          <mxGeometry height="22" width="400" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="erd2_c38" connectable="0" parent="erd2_c28" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="source: point_source" vertex="1">
+          <mxGeometry height="22" width="400" y="212" as="geometry" />
+        </mxCell>
+        <mxCell id="erd2_c39" connectable="0" parent="erd2_c28" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="poi_external_id: varchar(64) NULL" vertex="1">
+          <mxGeometry height="22" width="400" y="234" as="geometry" />
+        </mxCell>
+        <mxCell id="erd2_c40" connectable="0" parent="erd2_c28" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="created_by: uuid (FK)" vertex="1">
+          <mxGeometry height="22" width="400" y="256" as="geometry" />
+        </mxCell>
+        <mxCell id="erd2_c41" connectable="0" parent="erd2_c28" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="created_at: timestamptz" vertex="1">
+          <mxGeometry height="22" width="400" y="278" as="geometry" />
+        </mxCell>
+        <mxCell id="erd2_c42" parent="1" style="swimlane;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;swimlaneLine=1;strokeColor=#000000;fillColor=#FFFFFF;startSize=28;fontSize=11;fontStyle=1;fontFamily=Helvetica;" value="Версия маршрута(route_version)" vertex="1">
+          <mxGeometry height="212" width="400" x="600" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="erd2_c43" connectable="0" parent="erd2_c42" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="id: uuid (PK)" vertex="1">
+          <mxGeometry height="22" width="400" y="28" as="geometry" />
+        </mxCell>
+        <mxCell id="erd2_c44" connectable="0" parent="erd2_c42" style="line;strokeWidth=1;strokeColor=#000000;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+          <mxGeometry height="8" width="400" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="erd2_c45" connectable="0" parent="erd2_c42" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="trip_id: uuid (FK, AK1.1)" vertex="1">
+          <mxGeometry height="22" width="400" y="58" as="geometry" />
+        </mxCell>
+        <mxCell id="erd2_c46" connectable="0" parent="erd2_c42" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="revision: integer (AK1.2)" vertex="1">
+          <mxGeometry height="22" width="400" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="erd2_c47" connectable="0" parent="erd2_c42" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="geometry: text" vertex="1">
+          <mxGeometry height="22" width="400" y="102" as="geometry" />
+        </mxCell>
+        <mxCell id="erd2_c48" connectable="0" parent="erd2_c42" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="distance_m: integer" vertex="1">
+          <mxGeometry height="22" width="400" y="124" as="geometry" />
+        </mxCell>
+        <mxCell id="erd2_c49" connectable="0" parent="erd2_c42" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="duration_s: integer" vertex="1">
+          <mxGeometry height="22" width="400" y="146" as="geometry" />
+        </mxCell>
+        <mxCell id="erd2_c50" connectable="0" parent="erd2_c42" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="provider: varchar(32)" vertex="1">
+          <mxGeometry height="22" width="400" y="168" as="geometry" />
+        </mxCell>
+        <mxCell id="erd2_c51" connectable="0" parent="erd2_c42" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="built_at: timestamptz" vertex="1">
+          <mxGeometry height="22" width="400" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="erd2_e52" edge="1" parent="1" source="erd2_c1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;endArrow=oval;endFill=1;endSize=8;strokeColor=#000000;fontSize=12;labelBackgroundColor=none;fontFamily=Helvetica;exitX=1;exitY=0.5;entryX=0;entryY=0.15625;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;labelBorderColor=none;fillColor=none;strokeWidth=1.3;jettySize=20;orthogonalLoop=1;" target="erd2_c5" value="владеет  P">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="-18" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="erd2_e54" edge="1" parent="1" source="erd2_c5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;endArrow=oval;endFill=1;endSize=8;strokeColor=#000000;fontSize=12;labelBackgroundColor=none;fontFamily=Helvetica;exitX=0.2;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;labelBorderColor=none;fillColor=none;strokeWidth=1.3;jettySize=20;orthogonalLoop=1;" target="erd2_c28" value="содержит">
+          <mxGeometry relative="1" x="0.00735" as="geometry">
+            <mxPoint y="-18" as="offset" />
+            <Array as="points">
+              <mxPoint x="680" y="410" />
+              <mxPoint x="280" y="410" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="erd2_e56" edge="1" parent="1" source="erd2_c5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;endArrow=oval;endFill=1;endSize=8;strokeColor=#000000;fontSize=12;labelBackgroundColor=none;fontFamily=Helvetica;exitX=0.65;exitY=1;entryX=0.65;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;labelBorderColor=none;fillColor=none;strokeWidth=1.3;jettySize=20;orthogonalLoop=1;" target="erd2_c42" value="имеет">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="37" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="erd2_e58" edge="1" parent="1" source="erd2_c5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=oval;endFill=1;endSize=8;strokeColor=#000000;fontSize=12;labelBackgroundColor=none;fontFamily=Helvetica;exitX=1;exitY=0.625;entryX=0;entryY=0.5;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;labelBorderColor=none;fillColor=none;strokeWidth=1.3;jettySize=20;orthogonalLoop=1;" target="erd2_c23" value="настраивается">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="67.4" as="offset" />
+            <Array as="points">
+              <mxPoint x="1110" y="240" />
+              <mxPoint x="1110" y="531" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="erd2_e60" edge="1" parent="1" source="erd2_c17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=oval;endFill=1;endSize=8;strokeColor=#000000;fontSize=12;labelBackgroundColor=none;fontFamily=Helvetica;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;labelBorderColor=none;fillColor=none;strokeWidth=1.3;jettySize=20;orthogonalLoop=1;" target="erd2_c23" value="включается в">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="63.599999999999994" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="erd2_e62" edge="1" parent="1" source="erd2_c1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;endArrow=oval;endFill=1;endSize=8;strokeColor=#000000;fontSize=12;labelBackgroundColor=none;fontFamily=Helvetica;exitX=0.5;exitY=1;entryX=0.375;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;labelBorderColor=none;fillColor=none;strokeWidth=1.3;jettySize=20;orthogonalLoop=1;" target="erd2_c28" value="добавляет">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="52.199999999999996" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="erd-3" name="Участники, приглашения и события">
+    <mxGraphModel dx="1803" dy="1095" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="2000" pageHeight="1300" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="erd3_c1" parent="1" style="swimlane;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;swimlaneLine=1;strokeColor=#000000;fillColor=#FFFFFF;startSize=28;fontSize=11;fontStyle=1;fontFamily=Helvetica;" value="Пользователь(user)" vertex="1">
+          <mxGeometry height="80" width="300" x="80" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="erd3_c2" connectable="0" parent="erd3_c1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="id: uuid (PK)" vertex="1">
+          <mxGeometry height="22" width="300" y="28" as="geometry" />
+        </mxCell>
+        <mxCell id="erd3_c3" connectable="0" parent="erd3_c1" style="line;strokeWidth=1;strokeColor=#000000;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+          <mxGeometry height="8" width="300" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="erd3_c4" connectable="0" parent="erd3_c1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="email: citext (AK1)" vertex="1">
+          <mxGeometry height="22" width="300" y="58" as="geometry" />
+        </mxCell>
+        <mxCell id="erd3_c5" parent="1" style="swimlane;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;swimlaneLine=1;strokeColor=#000000;fillColor=#FFFFFF;startSize=28;fontSize=11;fontStyle=1;fontFamily=Helvetica;" value="Поездка(trip)" vertex="1">
+          <mxGeometry height="80" width="300" x="600" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="erd3_c6" connectable="0" parent="erd3_c5" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="id: uuid (PK)" vertex="1">
+          <mxGeometry height="22" width="300" y="28" as="geometry" />
+        </mxCell>
+        <mxCell id="erd3_c7" connectable="0" parent="erd3_c5" style="line;strokeWidth=1;strokeColor=#000000;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+          <mxGeometry height="8" width="300" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="erd3_c8" connectable="0" parent="erd3_c5" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="title: varchar(100)" vertex="1">
+          <mxGeometry height="22" width="300" y="58" as="geometry" />
+        </mxCell>
+        <mxCell id="erd3_c9" parent="1" style="swimlane;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;swimlaneLine=1;strokeColor=#000000;fillColor=#FFFFFF;startSize=28;fontSize=11;fontStyle=1;fontFamily=Helvetica;" value="Версия маршрута(route_version)" vertex="1">
+          <mxGeometry height="102" width="340" x="1220" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="erd3_c10" connectable="0" parent="erd3_c9" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="id: uuid (PK)" vertex="1">
+          <mxGeometry height="22" width="340" y="28" as="geometry" />
+        </mxCell>
+        <mxCell id="erd3_c11" connectable="0" parent="erd3_c9" style="line;strokeWidth=1;strokeColor=#000000;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+          <mxGeometry height="8" width="340" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="erd3_c12" connectable="0" parent="erd3_c9" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="trip_id: uuid (FK)" vertex="1">
+          <mxGeometry height="22" width="340" y="58" as="geometry" />
+        </mxCell>
+        <mxCell id="erd3_c13" connectable="0" parent="erd3_c9" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="revision: integer" vertex="1">
+          <mxGeometry height="22" width="340" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="erd3_c14" parent="1" style="swimlane;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;swimlaneLine=1;strokeColor=#000000;fillColor=#FFFFFF;startSize=28;fontSize=11;fontStyle=1;fontFamily=Helvetica;" value="Участник поездки(trip_participant)" vertex="1">
+          <mxGeometry height="146" width="340" x="80" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="erd3_c15" connectable="0" parent="erd3_c14" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="trip_id: uuid (PK, FK)" vertex="1">
+          <mxGeometry height="22" width="340" y="28" as="geometry" />
+        </mxCell>
+        <mxCell id="erd3_c16" connectable="0" parent="erd3_c14" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="user_id: uuid (PK, FK)" vertex="1">
+          <mxGeometry height="22" width="340" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="erd3_c17" connectable="0" parent="erd3_c14" style="line;strokeWidth=1;strokeColor=#000000;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+          <mxGeometry height="8" width="340" y="72" as="geometry" />
+        </mxCell>
+        <mxCell id="erd3_c18" connectable="0" parent="erd3_c14" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="role: participant_role" vertex="1">
+          <mxGeometry height="22" width="340" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="erd3_c19" connectable="0" parent="erd3_c14" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="joined_at: timestamptz" vertex="1">
+          <mxGeometry height="22" width="340" y="102" as="geometry" />
+        </mxCell>
+        <mxCell id="erd3_c20" connectable="0" parent="erd3_c14" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="removed_at: timestamptz NULL" vertex="1">
+          <mxGeometry height="22" width="340" y="124" as="geometry" />
+        </mxCell>
+        <mxCell id="erd3_c21" parent="1" style="swimlane;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;swimlaneLine=1;strokeColor=#000000;fillColor=#FFFFFF;startSize=28;fontSize=11;fontStyle=1;fontFamily=Helvetica;" value="Ссылка-приглашение(invite_link)" vertex="1">
+          <mxGeometry height="234" width="360" x="600" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="erd3_c22" connectable="0" parent="erd3_c21" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="id: uuid (PK)" vertex="1">
+          <mxGeometry height="22" width="360" y="28" as="geometry" />
+        </mxCell>
+        <mxCell id="erd3_c23" connectable="0" parent="erd3_c21" style="line;strokeWidth=1;strokeColor=#000000;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+          <mxGeometry height="8" width="360" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="erd3_c24" connectable="0" parent="erd3_c21" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="trip_id: uuid (FK)" vertex="1">
+          <mxGeometry height="22" width="360" y="58" as="geometry" />
+        </mxCell>
+        <mxCell id="erd3_c25" connectable="0" parent="erd3_c21" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="token_hash: char(64) (AK1)" vertex="1">
+          <mxGeometry height="22" width="360" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="erd3_c26" connectable="0" parent="erd3_c21" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="expires_at: timestamptz" vertex="1">
+          <mxGeometry height="22" width="360" y="102" as="geometry" />
+        </mxCell>
+        <mxCell id="erd3_c27" connectable="0" parent="erd3_c21" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="max_uses: smallint" vertex="1">
+          <mxGeometry height="22" width="360" y="124" as="geometry" />
+        </mxCell>
+        <mxCell id="erd3_c28" connectable="0" parent="erd3_c21" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="used_count: smallint" vertex="1">
+          <mxGeometry height="22" width="360" y="146" as="geometry" />
+        </mxCell>
+        <mxCell id="erd3_c29" connectable="0" parent="erd3_c21" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="revoked_at: timestamptz NULL" vertex="1">
+          <mxGeometry height="22" width="360" y="168" as="geometry" />
+        </mxCell>
+        <mxCell id="erd3_c30" connectable="0" parent="erd3_c21" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="created_by: uuid (FK)" vertex="1">
+          <mxGeometry height="22" width="360" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="erd3_c31" connectable="0" parent="erd3_c21" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="created_at: timestamptz" vertex="1">
+          <mxGeometry height="22" width="360" y="212" as="geometry" />
+        </mxCell>
+        <mxCell id="erd3_c32" parent="1" style="swimlane;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;swimlaneLine=1;strokeColor=#000000;fillColor=#FFFFFF;startSize=28;fontSize=11;fontStyle=1;fontFamily=Helvetica;" value="Событие изменения(edit_event)" vertex="1">
+          <mxGeometry height="190" width="360" x="1220" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="erd3_c33" connectable="0" parent="erd3_c32" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="id: bigint (PK)" vertex="1">
+          <mxGeometry height="22" width="360" y="28" as="geometry" />
+        </mxCell>
+        <mxCell id="erd3_c34" connectable="0" parent="erd3_c32" style="line;strokeWidth=1;strokeColor=#000000;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+          <mxGeometry height="8" width="360" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="erd3_c35" connectable="0" parent="erd3_c32" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="trip_id: uuid (FK)" vertex="1">
+          <mxGeometry height="22" width="360" y="58" as="geometry" />
+        </mxCell>
+        <mxCell id="erd3_c36" connectable="0" parent="erd3_c32" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="actor_id: uuid (FK)" vertex="1">
+          <mxGeometry height="22" width="360" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="erd3_c37" connectable="0" parent="erd3_c32" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="revision: integer" vertex="1">
+          <mxGeometry height="22" width="360" y="102" as="geometry" />
+        </mxCell>
+        <mxCell id="erd3_c38" connectable="0" parent="erd3_c32" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="kind: edit_kind" vertex="1">
+          <mxGeometry height="22" width="360" y="124" as="geometry" />
+        </mxCell>
+        <mxCell id="erd3_c39" connectable="0" parent="erd3_c32" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="payload: jsonb" vertex="1">
+          <mxGeometry height="22" width="360" y="146" as="geometry" />
+        </mxCell>
+        <mxCell id="erd3_c40" connectable="0" parent="erd3_c32" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="created_at: timestamptz" vertex="1">
+          <mxGeometry height="22" width="360" y="168" as="geometry" />
+        </mxCell>
+        <mxCell id="erd3_c41" parent="1" style="swimlane;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;swimlaneLine=1;strokeColor=#000000;fillColor=#FFFFFF;startSize=28;fontSize=11;fontStyle=1;fontFamily=Helvetica;" value="Уведомление(notification)" vertex="1">
+          <mxGeometry height="190" width="340" x="80" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="erd3_c42" connectable="0" parent="erd3_c41" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="id: uuid (PK)" vertex="1">
+          <mxGeometry height="22" width="340" y="28" as="geometry" />
+        </mxCell>
+        <mxCell id="erd3_c43" connectable="0" parent="erd3_c41" style="line;strokeWidth=1;strokeColor=#000000;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+          <mxGeometry height="8" width="340" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="erd3_c44" connectable="0" parent="erd3_c41" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="user_id: uuid (FK)" vertex="1">
+          <mxGeometry height="22" width="340" y="58" as="geometry" />
+        </mxCell>
+        <mxCell id="erd3_c45" connectable="0" parent="erd3_c41" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="trip_id: uuid (FK) NULL" vertex="1">
+          <mxGeometry height="22" width="340" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="erd3_c46" connectable="0" parent="erd3_c41" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="kind: notification_kind" vertex="1">
+          <mxGeometry height="22" width="340" y="102" as="geometry" />
+        </mxCell>
+        <mxCell id="erd3_c47" connectable="0" parent="erd3_c41" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="payload: jsonb" vertex="1">
+          <mxGeometry height="22" width="340" y="124" as="geometry" />
+        </mxCell>
+        <mxCell id="erd3_c48" connectable="0" parent="erd3_c41" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="created_at: timestamptz" vertex="1">
+          <mxGeometry height="22" width="340" y="146" as="geometry" />
+        </mxCell>
+        <mxCell id="erd3_c49" connectable="0" parent="erd3_c41" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="read_at: timestamptz NULL" vertex="1">
+          <mxGeometry height="22" width="340" y="168" as="geometry" />
+        </mxCell>
+        <mxCell id="erd3_c50" parent="1" style="swimlane;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;swimlaneLine=1;strokeColor=#000000;fillColor=#FFFFFF;startSize=28;fontSize=11;fontStyle=1;fontFamily=Helvetica;" value="Переход по приглашению(invite_use)" vertex="1">
+          <mxGeometry height="146" width="360" x="600" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="erd3_c51" connectable="0" parent="erd3_c50" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="id: bigint (PK)" vertex="1">
+          <mxGeometry height="22" width="360" y="28" as="geometry" />
+        </mxCell>
+        <mxCell id="erd3_c52" connectable="0" parent="erd3_c50" style="line;strokeWidth=1;strokeColor=#000000;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+          <mxGeometry height="8" width="360" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="erd3_c53" connectable="0" parent="erd3_c50" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="invite_link_id: uuid (FK)" vertex="1">
+          <mxGeometry height="22" width="360" y="58" as="geometry" />
+        </mxCell>
+        <mxCell id="erd3_c54" connectable="0" parent="erd3_c50" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="user_id: uuid (FK)" vertex="1">
+          <mxGeometry height="22" width="360" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="erd3_c55" connectable="0" parent="erd3_c50" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="result: invite_result" vertex="1">
+          <mxGeometry height="22" width="360" y="102" as="geometry" />
+        </mxCell>
+        <mxCell id="erd3_c56" connectable="0" parent="erd3_c50" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="used_at: timestamptz" vertex="1">
+          <mxGeometry height="22" width="360" y="124" as="geometry" />
+        </mxCell>
+        <mxCell id="erd3_c57" parent="1" style="swimlane;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;swimlaneLine=1;strokeColor=#000000;fillColor=#FFFFFF;startSize=28;fontSize=11;fontStyle=1;fontFamily=Helvetica;" value="Экспорт маршрута(export_record)" vertex="1">
+          <mxGeometry height="212" width="340" x="1220" y="900" as="geometry" />
+        </mxCell>
+        <mxCell id="erd3_c58" connectable="0" parent="erd3_c57" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="id: uuid (PK)" vertex="1">
+          <mxGeometry height="22" width="340" y="28" as="geometry" />
+        </mxCell>
+        <mxCell id="erd3_c59" connectable="0" parent="erd3_c57" style="line;strokeWidth=1;strokeColor=#000000;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+          <mxGeometry height="8" width="340" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="erd3_c60" connectable="0" parent="erd3_c57" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="trip_id: uuid (FK)" vertex="1">
+          <mxGeometry height="22" width="340" y="58" as="geometry" />
+        </mxCell>
+        <mxCell id="erd3_c61" connectable="0" parent="erd3_c57" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="user_id: uuid (FK)" vertex="1">
+          <mxGeometry height="22" width="340" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="erd3_c62" connectable="0" parent="erd3_c57" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="route_version_id: uuid (FK)" vertex="1">
+          <mxGeometry height="22" width="340" y="102" as="geometry" />
+        </mxCell>
+        <mxCell id="erd3_c63" connectable="0" parent="erd3_c57" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="target: export_target" vertex="1">
+          <mxGeometry height="22" width="340" y="124" as="geometry" />
+        </mxCell>
+        <mxCell id="erd3_c64" connectable="0" parent="erd3_c57" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="points_count: smallint" vertex="1">
+          <mxGeometry height="22" width="340" y="146" as="geometry" />
+        </mxCell>
+        <mxCell id="erd3_c65" connectable="0" parent="erd3_c57" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="truncated: boolean" vertex="1">
+          <mxGeometry height="22" width="340" y="168" as="geometry" />
+        </mxCell>
+        <mxCell id="erd3_c66" connectable="0" parent="erd3_c57" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontSize=10;fontFamily=Helvetica;" value="created_at: timestamptz" vertex="1">
+          <mxGeometry height="22" width="340" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="erd3_e67" edge="1" parent="1" source="erd3_c1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=oval;endFill=1;endSize=8;strokeColor=#000000;fontSize=12;labelBackgroundColor=none;fontFamily=Helvetica;exitX=0.5;exitY=1;entryX=0.441176;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;labelBorderColor=none;fillColor=none;strokeWidth=1.3;jettySize=20;orthogonalLoop=1;" target="erd3_c14" value="состоит в">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="52.199999999999996" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="erd3_e69" edge="1" parent="1" source="erd3_c5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=oval;endFill=1;endSize=8;strokeColor=#000000;fontSize=12;labelBackgroundColor=none;fontFamily=Helvetica;exitX=0;exitY=0.5;entryX=1;entryY=0.5;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;labelBorderColor=none;fillColor=none;strokeWidth=1.3;jettySize=20;orthogonalLoop=1;" target="erd3_c14" value="объединяет  P">
+          <mxGeometry relative="1" x="0.15009" as="geometry">
+            <mxPoint x="-67.4" as="offset" />
+            <Array as="points">
+              <mxPoint x="470" y="100" />
+              <mxPoint x="470" y="453" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="erd3_e71" edge="1" parent="1" source="erd3_c5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;endArrow=oval;endFill=1;endSize=8;strokeColor=#000000;fontSize=12;labelBackgroundColor=none;fontFamily=Helvetica;exitX=0.5;exitY=1;entryX=0.416667;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;labelBorderColor=none;fillColor=none;strokeWidth=1.3;jettySize=20;orthogonalLoop=1;" target="erd3_c21" value="открывается по">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="71.19999999999999" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="erd3_e73" edge="1" parent="1" source="erd3_c5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;endArrow=oval;endFill=1;endSize=8;strokeColor=#000000;fontSize=12;labelBackgroundColor=none;fontFamily=Helvetica;exitX=1;exitY=0.5;entryX=0;entryY=0.210526;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;labelBorderColor=none;fillColor=none;strokeWidth=1.3;jettySize=20;orthogonalLoop=1;" target="erd3_c32" value="изменяется">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="-18" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="erd3_e75" edge="1" parent="1" source="erd3_c21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;endArrow=oval;endFill=1;endSize=8;strokeColor=#000000;fontSize=12;labelBackgroundColor=none;fontFamily=Helvetica;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;labelBorderColor=none;fillColor=none;strokeWidth=1.3;jettySize=20;orthogonalLoop=1;" target="erd3_c50" value="используется">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="63.599999999999994" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="erd3_e77" edge="1" parent="1" source="erd3_c5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;endArrow=oval;endFill=1;endSize=8;strokeColor=#000000;fontSize=12;labelBackgroundColor=none;fontFamily=Helvetica;startArrow=diamondThin;startFill=0;startSize=10;exitX=0;exitY=0.75;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;labelBorderColor=none;fillColor=none;strokeWidth=1.3;jettySize=20;orthogonalLoop=1;" target="erd3_c41" value="упоминается в">
+          <mxGeometry relative="1" x="0.64078" as="geometry">
+            <mxPoint y="-18" as="offset" />
+            <Array as="points">
+              <mxPoint x="500" y="120" />
+              <mxPoint x="500" y="740" />
+              <mxPoint x="250" y="740" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="erd3_e79" edge="1" parent="1" source="erd3_c5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;endArrow=oval;endFill=1;endSize=8;strokeColor=#000000;fontSize=12;labelBackgroundColor=none;fontFamily=Helvetica;exitX=1;exitY=0.75;entryX=0;entryY=0.5;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;labelBorderColor=none;fillColor=none;strokeWidth=1.3;jettySize=20;orthogonalLoop=1;" target="erd3_c57" value="экспортируется">
+          <mxGeometry relative="1" x="0.0995" as="geometry">
+            <mxPoint x="-71.19999999999999" as="offset" />
+            <Array as="points">
+              <mxPoint x="1120" y="120" />
+              <mxPoint x="1120" y="1006" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="erd3_e81" edge="1" parent="1" source="erd3_c9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;endArrow=oval;endFill=1;endSize=8;strokeColor=#000000;fontSize=12;labelBackgroundColor=none;fontFamily=Helvetica;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;labelBorderColor=none;fillColor=none;strokeWidth=1.3;jettySize=20;orthogonalLoop=1;" target="erd3_c57" value="передаётся в">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="63.599999999999994" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
